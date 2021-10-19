@@ -1,39 +1,129 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-    
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta name="description" content="Mi primer formulario HTML con diferentes tipos de entrada">
-        <meta name="author" content="Arce">
-        <meta name="lang" content="es-ES">
-        <meta name="keywords" content="html, html5, diseño de interfaces, diw, desarrollo de aplicaciones, desarrollos de aplicaciones web, programación, formularios">
-        <title>Formulario de mi página web</title>
 
-    </head>
+<head>
 
-    <body>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mi primer formulario HTML con diferentes tipos de entrada">
+    <meta name="author" content="Arce">
+    <meta name="lang" content="es-ES">
+    <meta name="keywords" content="html, html5, diseño de interfaces, diw, desarrollo de aplicaciones, desarrollos de aplicaciones web, programación, formularios">
+    <title>Formulario de mi página web</title>
 
-        <main id="contenido">
-            
-            <form name="miFormulario" method="post" action="form.php">
+</head>
+
+<body>
+
+    <main id="contenido">
+
+        <form name="miFormulario" method="post" action="form.php">
+
+            <fieldset>
+
+                <legend>Datos Personales</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" size="15">
+                </p>
+
+                <p>
+                    <label for="ap">Apellidos:</label>
+                    <input type="text" name="ap" id="ap" size="40">
+                </p>
+
+                <p>
+                    <label for="fechaNac">Fecha de Nacimiento:</label>
+                    <input type="date" name="fechaNac" id="fechaNac" value="2021-10-19">
+                </p>
 
                 <fieldset>
-                        <legend>Datos Personales</legend>
+
+                    <legend>Género</legend>
                     <p>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" size="15">
+                        <label for="genero">Mujer</label>
+                        <input type="radio" name="genero" id="mujer" value="mujer">
                     </p>
+
                     <p>
-                        <label for="ap">Apellidos:</label>
-                        <input type="text" name="ap" id="ap" size="40">
+                        <label for="genero">Hombre</label>
+                        <input type="radio" name="genero" id="hombre" value="hombre">
                     </p>
+
+                    <p>
+                        <label for="genero">Otro</label>
+                        <input type="radio" name="genero" id="otro" value="otro">
+                    </p>
+
                 </fieldset>
+            </fieldset>
+            <fieldset>
 
-            </form>
+                <legend>Otros Datos</legend>
+                <p>
+                    <label for="numFav">Número Par Favorito:</label>
+                    <input type="number" name="numFav" id="numFav" size="5" min="0" max="100" step="2" value="4">
+                </p>
+                <p>
+                    <fieldset>
 
-        </main>
+                        <legend>Intereses Personales</legend>
+                        <p>
+                            <label for="deporte">Deporte</label>
+                            <input type="checkbox" name="deporte" id="deporte" value="deporte">
+                        </p>
+
+                        <p>
+                            <label for="vidj">Videojuegos</label>
+                            <input type="checkbox" name="vidj" id="vidj" value="vidj">
+                        </p>
+
+                        <p>
+                            <label for="cine">Cine</label>
+                            <input type="checkbox" name="cine" id="cine" value="cine">
+                        </p>
+
+                        <p>
+                            <label for="lec">Lectura</label>
+                            <input type="checkbox" name="lec" id="lec" value="lec">
+                        </p>
+
+                    </fieldset>
+
+                    <p>
+                        <label for="turno">Turno de Trabajo:</label>
+                        <select name="turno" id="turno">
+                            <option value="diurno">Turno de Mañana</option>
+                            <option value="vespertino" selected="selected">Turno de Tarde</option>
+                            <option value="nocturno">Turno de Noche</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="ciudad">Ciudad de Procedencia</label>
+                        <select name="ciudad" id="ciudad">
+
+                            <optgroup label="Andalucía">
+                                <option value="jaen">Jaén</option>
+                                <option value="cadiz" selected="selected">Cádiz</option>
+                                <option value="malaga">Málaga</option>
+                            </optgroup>
+
+                            <optgroup label="Galicia">
+                                <option value="orense">Orense</option>
+                                <option value="pontevedra">Pontevedra</option>
+                                <option value="Lugo">Lugo</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                </p>
+            </fieldset>
+
+        </form>
+
+    </main>
 
 
-    </body>
+</body>
+
 </html>
