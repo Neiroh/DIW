@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mi primer formulario HTML con diferentes tipos de entrada">
+    <meta name="author" content="Arce">
+    <meta name="lang" content="es-ES">
+    <meta name="keywords" content="html, html5, diseño de interfaces, diw, desarrollo de aplicaciones, desarrollos de aplicaciones web, programación, formularios">
+    <title>Expresiones Regulares</title>
+</head>
+
+<body>
+
+    <main>
+        <form action="./PHP/form.php" method="post">
+
+            <fieldset>
+                <p>
+                    <legend>
+                        <h2>Validación de Datos</h2>
+                    </legend>
+                    <label for="expreg">Introduce el valor: </label>
+                    <input type="text" name="expreg" id="expreg" pattern="[A-Z](13579)?(\d){0, }[a-z]{2, }">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

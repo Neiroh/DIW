@@ -16,26 +16,45 @@
 
     <main id="contenido">
 
-        <form name="miFormulario" method="post" action="form.php">
+        <form name="miFormulario" method="post" action="./PHP/form.php">
 
             <fieldset>
 
                 <legend>Datos Personales</legend>
                 <p>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" size="15">
+                    <input type="text" name="nombre" id="nombre" size="15" maxlength="10" required>
                 </p>
 
                 <p>
                     <label for="ap">Apellidos:</label>
-                    <input type="text" name="ap" id="ap" size="40">
+                    <input type="text" name="ap" id="ap" size="40" maxlength="40" required>
                 </p>
 
                 <p>
                     <label for="fechaNac">Fecha de Nacimiento:</label>
                     <input type="date" name="fechaNac" id="fechaNac" value="2021-10-19">
                 </p>
-
+                <p>
+                    <label for="correo">Dirección de Correo: </label>
+                    <input type="email" name="correo" id="correo" size="30" value="correo@dominio.es" disabled>
+                </p>
+                <p>
+                    <label for="tlf">Teléfono: </label>
+                    <input type="tel" name="tlf" id="tlf" value="987654321" readonly>
+                </p>
+                <p>
+                    <label for="passwd">Contraseña: </label>
+                    <input type="password" name="passwd" id="passwd" size="10" required autofocus>
+                </p>
+                <p>
+                    <label for="mat">Matrícula: </label>
+                    <input type="text" name="mat" id="mat" size="8" pattern="[0-9]{4}((-)|(\s))?[BCDFGHJKLMNPRSTVWXYZ]{3}">
+                </p>
+                <p>
+                    <label for="web">Página Web Personal: </label>
+                    <input type="url" name="web" id="web" required placeholder="Introduzca una página web válida" size="50">
+                </p>
                 <fieldset>
 
                     <legend>Género</legend>
@@ -111,14 +130,49 @@
                             <optgroup label="Galicia">
                                 <option value="orense">Orense</option>
                                 <option value="pontevedra">Pontevedra</option>
-                                <option value="Lugo">Lugo</option>
+                                <option value="lugo">Lugo</option>
                             </optgroup>
                         </select>
                     </p>
+                    <p>
+                        <label for="marcas">Marca de Teléfono Móvil favorita:</label>
+                        <input type="text" list="marcaslist" spellcheck="false">
+                        <datalist id="marcaslist" name="marcas">
+                            <option value="Apple" label="Innecesariamente caro">Apple</option>
+                            <option value="Samsung" label="Marca china">Samsung</option>
+                            <option value="Oppo" label="Espías que nos van a matar">Oppo</option>
+                            <option value="Xiaomi" label="Espías de china">Xiaomi</option>
+                        </datalist>
+                    </p>
 
+                    <p>
+
+                        <label for="colores">Mi color favorito es: </label>
+                        <input type="color" name="colores" id="colores" value="#FF6161">
+
+                    </p>
+                    <p>
+
+                        <label for="escala">Mi nivel de satisfacción con la asignatura es: </label>
+                        <input type="range" name="escala" id="escala" min="0" max="100" value="80">
+                    </p>
+                    <p>
+                        <label for="archivo">Sube un Archivo</label>
+                        <input type="file" name="archivo" id="archivo">
+                    </p>
+                    <p>
+                        <label for="comentario">Introduzca comentarios: </label>
+                        <textarea id="comentario" name="comentario" rwos="5" cols="40" spellcheck="true"></textarea>
+                    </p>
                 </p>
             </fieldset>
-
+            <p>
+                <div>
+                    <input type="reset" value="Borrar">
+                </div>
+                <hr>
+                <input type="submit" value="Enviar">
+            </p>
         </form>
 
     </main>
