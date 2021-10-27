@@ -21,7 +21,7 @@
                         <h2>Validación de Datos</h2>
                     </legend>
                     <label for="expreg">Introduce el valor: </label>
-                    <input type="text" name="expreg" id="expreg" pattern="[A-Z](13579)?(\d){0, }[a-z]{2, }">
+                    <input type="text" name="expreg" id="expreg" pattern="(?=.{6,}$)(?!.*[aeiou][aeiou][AEIOU])([AEIOU][AEIOUaeiou]*[aeiou])" required>
                 </p>
                 <p>
                     <input type="submit" value="Enviar">
