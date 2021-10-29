@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<!-- Mi primera Página Web HTML -->
+
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Jesús Roca">
+    <meta name="keywords" content="computers,programming,web design,html,html5">
+    <meta name="descripcion" content="Mi primera página web, para recordar mis conocimientos de HTML">
+    <meta name="lang" content="es-ES">
+    <title>Mi primera página HTML</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" type="image/png" href="./icon.png">
+    <!-- Otra imagen de windows <link rel="icon" type="image/x-icon" href="./icon.ico" sizes="32x32"> -->
+    <base href="./img/">
+</head>
+
+<body>
+    <h1>
+        Esto es una cosa del gobierno que no interesa.
+    </h1>
+    <p class="primerparrafo">
+        Gobierno y PP han alcanzado un acuerdo, <a href="https://www.eldiario.es" target="_blank" type="text/html" rel="external">elDiario.es</a> en tiempo récord para la renovación de los órganos constitucionales que tenían su mandato caducado a excepción
+        del más polémico, el Poder Judicial, para el que Génova mantiene el veto.
+    </p>
+    <p>
+        <ul>
+            <!--Esto no funciona si no quitamos <base href="./img/" al principio-->
+            <li><a href="#accidente">Accidentes laborales</a></li>
+            <li><a href="#imagen">Imagen</a></li>
+        </ul>
+    </p>
+    <br>
+    <br>
+    <p class="seccion1">
+        Las conversaciones se <span>RETOMARON</span> este miércoles después de que Pablo Casado le tendiera la mano a Pedro Sánchez para proceder a renovar las instituciones, aunque dejó claro que el CGPJ no entraría en el paquete hasta que se modifique
+        la ley, un extremo que los socialistas rechazan.
+    </p>
+    <img src="room.jpg" alt="Habitación" title="Habitación de las perlas" usemap="#mimapa">
+    <h2 id="accidente">
+        <mark>Conclusion de nada.</mark>
+    </h2>
+    <p class="primerparrafo">
+        Hasta <span>2018</span> A pesar de que la intención del Gobierno era negociar todas las instituciones en conjunto, finalmente PSOE y PP han cerrado las demás y seguirán hablando del Poder Judicial.
+    </p>
+    <p class="segundoparrafo">
+        "Tras las <em>conversaciones</em> mantenidas entre el ministro de la Presidencia, Relaciones con las Cortes y Memoria Democrática, Félix Bolaños, y el secretario general del PP, Teodoro García Egea, esta mañana, el Partido Socialista y el Partido
+        Popular han alcanzado un acuerdo que permitirá la renovación del Tribunal Constitucional, el Tribunal de Cuentas, el Defensor del Pueblo y la Agencia de Protección de Datos", ha informado Moncloa en un comunicado.
+    </p>
+    <p id="findetexto">
+        "La <strong>renovación</strong> de estos órganos se llevará a cabo en una sesión plenaria que se celebrará previsiblemente la semana del 25 de octubre tanto en el Congreso de los Diputados como en el Senado", apostilla el mensaje.
+    </p>
+    <p>
+        X<sup>4</sup> = 16
+        <br> X
+        <sub>0</sub> = +2
+        <br> x
+        <sub>1</sub> = -2
+        <br> Me encanta el <abbr title="Instituto de enseñanza Secundaria">IES</abbr> "Perla del Mediterraneo"
+    </p>
+
+    <map name="mimapa">
+            <area shape="rect" coords="413,113,501,221" alt="rectángulo" title="Cuadro" href="http://www.google.es" target="_blank">
+            <area shape="circle" coords="725,221,55" alt="Círculo" title="Espejo" href="http://www.google.es" target="_blank">
+            <area shape="poly" coords="241,308,352,308,351,408,280,497,103,494,103,338" alt="Polígono" title="Sofá" href="http://www.google.es" target="_blank">
+        </map>
+    <figure id="imagen">
+        <picture>
+            <source media="(min-width:1200px)" srcset="grande.jpg">
+            <source media="(min-width:800px)" srcset="mediana.jpg">
+            <img src="peque.jpg">
+        </picture>
+        <figcaption>La tierra desde el espacio</figcaption>
+    </figure>
+
+    <ul>
+        <li>Lista sin ordenar 1</li>
+        <ol type="1" start="27">
+            <li>Lista ordenada 1</li>
+            <li>Lista ordenada 2</li>
+            <li>Lista ordenada 3</li>
+            <li>Lista ordenada 4</li>
+            <li>Lista ordenada 5</li>
+            <li>Lista ordenada 6</li>
+        </ol>
+        <li>Lista sin ordenar 2</li>
+        <li>Lista sin ordenar 3</li>
+        <li>Lista sin ordenar 4</li>
+        <li>Lista sin ordenar 5</li>
+    </ul>
+
+    <dt>Perlas mediterráneas</dt>
+    <dd>El alumnado de Segundo curso de Desarrollo de Aplicaciones Web.</dd>
+    <br>
+    <dt>Módulos</dt>
+    <dd>
+        <ul>
+            <li>DWEC</li>
+            <li>DWES</li>
+            <li>DIW</li>
+            <li>DAW</li>
+            <li>EIE</li>
+        </ul>
+    </dd>
+
+    <details>
+        <summary><bdo dir="rtl">Elemento desplegable: Módulos</bdo></summary>
+        <ul>
+            <li>DWEC</li>
+            <li>DWES</li>
+            <li><del>DIW</del></li>
+            <li>DAW</li>
+            <li>EIE</li>
+        </ul>
+    </details>
+    <hr>
+    <blockquote>
+        Elemento 1
+    </blockquote>
+    <blockquote>
+        Elemento 2
+    </blockquote>
+    <blockquote>
+        Elemento 3
+    </blockquote>
+    <hr>
+    <br>
+
+    <table border="1">
+        <th colspan="2">Encabezado</th>
+        <tr>
+            <td>Fila 1 Columna 1</td>
+            <td>Fila 1 Columna 2</td>
+        </tr>
+        <tr>
+            <td>Fila 2 Columna 1</td>
+            <td>Fila 2 Columna 2</td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <th colspan="6">Hoario</th>
+        <tr>
+            <td>Día</td>
+            <td>L</td>
+            <td>M</td>
+            <td>X</td>
+            <td>J</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>DAW</td>
+            <td colspan="2">DWES</td>
+            <td>EIE</td>
+            <td>DWES</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>DWEC</td>
+            <td>DWES</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>DWEC</td>
+            <td>DIW</td>
+            <td>EIE</td>
+            <td>DWEC</td>
+            <td>DIW</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>DWEC</td>
+            <td>DIW</td>
+            <td>DAW</td>
+            <td>DIW</td>
+            <td>DIW</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>DWES</td>
+            <td>DWEC</td>
+            <td>DAW</td>
+            <td>DIW</td>
+            <td>EIE</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>DWES</td>
+            <td>DWEC</td>
+            <td>DIW</td>
+            <td>DAW</td>
+            <td>DIW</td>
+        </tr>
+    </table>
+</body>
+
+</html>

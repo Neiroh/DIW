@@ -1,0 +1,36 @@
+/*Estilos Css*/
+.primerparrafo{
+    color:red;
+}
+
+.segundoparrafo{
+    color:blue;
+}
+
+.seccion1{
+    font-weight: bold;
+}
+
+#findetexto{
+    color: orange;
+}
+
+span{
+    font-style: italic;
+}
+
+mark{
+    background-color: palegreen;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+figcaption{
+    color:rosybrown;
+}
+
+ul{
+    list-style-type:circle;
+}
