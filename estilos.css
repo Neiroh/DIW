@@ -1,36 +1,70 @@
 /*Estilos Css*/
-.primerparrafo{
-    color:red;
+
+.primerparrafo {
+    color: red;
 }
 
-.segundoparrafo{
-    color:blue;
+.segundoparrafo {
+    color: blue;
 }
 
-.seccion1{
+.seccion1 {
     font-weight: bold;
 }
 
-#findetexto{
+#findetexto {
     color: orange;
 }
 
-span{
+span {
     font-style: italic;
 }
 
-mark{
+mark {
     background-color: palegreen;
 }
 
-abbr{
+abbr {
     text-decoration: none;
 }
 
-figcaption{
-    color:rosybrown;
+figcaption {
+    color: rosybrown;
 }
 
-ul{
-    list-style-type:circle;
+ul {
+    list-style-type: circle;
+}
+
+ol li {
+    color: green;
+    font-weight: bold;
+}
+
+section p~p {
+    background-color: hotpink;
+}
+
+.primerparrafo span {
+    background-color: khaki;
+}
+
+table th[colspan] {
+    background-color: lightcoral;
+}
+
+blockquote {
+    background-color: magenta;
+}
+
+blockquote+blockquote {
+    background-color: lightsalmon;
+}
+
+p>em {
+    background-color: oldlace;
+}
+
+body>p {
+    background-color: olive;
 }

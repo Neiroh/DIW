@@ -1,0 +1,195 @@
+/*Estilos Css*/
+
+
+/*
+.segundoparrafo{
+    color:blue;
+}*/
+
+
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}*/
+
+:root {
+    --colorPrincipal: #d1a3d4;
+    --colorSecundario: #501c7a;
+}
+
+p:hover:not(.deluxe) {
+    background-color: white;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+strong {
+    font-size: 1.7em;
+}
+
+html {
+    background-color: var(--colorPrincipal);
+}
+
+.seccion1 {
+    font-weight: bold;
+}
+
+#findetexto {
+    background-color: var(--colorSecundario);
+}
+
+span {
+    font-style: italic;
+}
+
+mark {
+    background-color: palegreen;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+figcaption {
+    color: rosybrown;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol li {
+    color: green;
+    font-weight: bold;
+}
+
+section p~p {
+    background-color: paleturquoise;
+}
+
+.primerparrafo span {
+    background-color: purple;
+}
+
+th[colspan="2"],
+th[colspan="4"] {
+    background-color: royalblue;
+}
+
+blockquote~blockquote {
+    background-color: salmon;
+}
+
+blockquote {
+    background-color: sandybrown;
+}
+
+p>em {
+    background-color: steelblue;
+}
+
+body>p,
+nav>p {
+    background-color: thistle;
+}
+
+nav * li:nth-child(odd) {
+    font-family: monospace;
+}
+
+nav * li:nth-child(even) {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section p:first-child {
+    color: red;
+}
+
+section p:last-child {
+    color: yellow;
+}
+
+h2:first-of-type {
+    font-size: 3em;
+}
+
+section :not(p) :not(span) {
+    font-size: 2em;
+}
+
+nav a:hover {
+    font-size: 2em;
+}
+
+section p:active {
+    background-color: yellow;
+}
+
+a:link {
+    color: violet;
+    text-decoration: none;
+    background-color: tomato;
+}
+
+a:visited {
+    color: yellow;
+    text-decoration: none;
+    background-color: turquoise;
+}
+
+h1::first-letter {
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+}
+
+.seccion1::first-line {
+    color: blueviolet;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+::selection {
+    color: rgb(5, 71, 71);
+    background-color: rgb(0, 0, 0);
+}
+
+.cita::before {
+    content: "...";
+    color: deeppink;
+    font-weight: bold;
+    font-size: 3em;
+    width: 100px;
+    display: inline-block;
+}
+
+.cita::after {
+    content: "---";
+    color: deeppink;
+    font-weight: bold;
+    font-size: 3em;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+#accidente {
+    font-size: 10vw;
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+}
+
+.deluxe span {
+    background-color: transparent;
+    color: green;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-style: normal;
+    font-variant: small-caps;
+}

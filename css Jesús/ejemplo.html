@@ -13,18 +13,19 @@
     <meta name="lang" content="es-ES">
     <title>Mi primera página HTML</title>
     <link rel="stylesheet" href="./estilos.css">
-    <link rel="icon" type="image/png" href="./icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
     <!-- Otra imagen de windows <link rel="icon" type="image/x-icon" href="./icon.ico" sizes="32x32"> -->
     <base href="./img/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;900&family=Spinnaker&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <h1>
+        Esto es una cosa del gobierno que no interesa.
+    </h1>
     <nav>
-        <h1>
-            Esto es una cosa del gobierno que no interesa.
-        </h1>
-    </nav>
-    <section>
         <p class="primerparrafo">
             Gobierno y PP han alcanzado un acuerdo, <a href="https://www.eldiario.es" target="_blank" type="text/html" rel="external">elDiario.es</a> en tiempo récord para la renovación de los órganos constitucionales que tenían su mandato caducado a
             excepción del más polémico, el Poder Judicial, para el que Génova mantiene el veto.
@@ -34,20 +35,28 @@
                 <!--Esto no funciona si no quitamos <base href="./img/" al principio-->
                 <li><a href="#accidente">Accidentes laborales</a></li>
                 <li><a href="#imagen">Imagen</a></li>
+                <li><a href="#imagen">Imagen</a></li>
             </ul>
         </p>
-        <br>
-        <br>
+    </nav>
+    <br>
+    <br>
+    <h2>Conversaciones</h2>
+    <section>
+
         <p class="seccion1">
             Las conversaciones se <span>RETOMARON</span> este miércoles después de que Pablo Casado le tendiera la mano a Pedro Sánchez para proceder a renovar las instituciones, aunque dejó claro que el CGPJ no entraría en el paquete hasta que se modifique
             la ley, un extremo que los socialistas rechazan.
         </p>
+        <img src="room.jpg" alt="Habitación" title="Habitación de las perlas" usemap="#mimapa">
+        <h2 id="accidente">Accidentes</h2>
+
     </section>
-    <img src="room.jpg" alt="Habitación" title="Habitación de las perlas" usemap="#mimapa">
-    <h2 id="accidente">
-        <mark>Conclusion de nada.</mark>
-    </h2>
+
+    <mark>Conclusion de nada.</mark>
+
     <section>
+
         <p class="primerparrafo">
             Hasta <span>2018</span> A pesar de que la intención del Gobierno era negociar todas las instituciones en conjunto, finalmente PSOE y PP han cerrado las demás y seguirán hablando del Poder Judicial.
         </p>
@@ -55,17 +64,21 @@
             "Tras las <em>conversaciones</em> mantenidas entre el ministro de la Presidencia, Relaciones con las Cortes y Memoria Democrática, Félix Bolaños, y el secretario general del PP, Teodoro García Egea, esta mañana, el Partido Socialista y el
             Partido Popular han alcanzado un acuerdo que permitirá la renovación del Tribunal Constitucional, el Tribunal de Cuentas, el Defensor del Pueblo y la Agencia de Protección de Datos", ha informado Moncloa en un comunicado.
         </p>
+    </section>
+    <section>
         <p id="findetexto">
             "La <strong>renovación</strong> de estos órganos se llevará a cabo en una sesión plenaria que se celebrará previsiblemente la semana del 25 de octubre tanto en el Congreso de los Diputados como en el Senado", apostilla el mensaje.
         </p>
+        <p>
+            X<sup>4</sup> = 16
+            <br> X
+            <sub>0</sub> = +2
+            <br> x
+            <sub>1</sub> = -2
+            <br>
     </section>
-    <p>
-        X<sup>4</sup> = 16
-        <br> X
-        <sub>0</sub> = +2
-        <br> x
-        <sub>1</sub> = -2
-        <br> Me encanta el <abbr title="Instituto de enseñanza Secundaria">IES</abbr> "Perla del Mediterraneo"
+
+    Me encanta el <abbr title="Instituto de enseñanza Secundaria">IES</abbr> "Perla del Mediterraneo"
     </p>
 
     <map name="mimapa">
@@ -123,7 +136,7 @@
         </ul>
     </details>
     <hr>
-    <blockquote>
+    <blockquote class="cita">
         Elemento 1
     </blockquote>
     <blockquote>
@@ -206,6 +219,10 @@
             <td>DIW</td>
         </tr>
     </table>
+
+    <p class="deluxe">
+        <span>Hasta 2018 A pesar</span> de que la intención del Gobierno era negociar todas las instituciones en conjunto, finalmente PSOE y PP han cerrado las demás y seguirán hablando del Poder Judicial.
+    </p>
 </body>
 
 </html>

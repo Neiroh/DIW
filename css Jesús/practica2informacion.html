@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<!-- Mi primera Página Web HTML -->
+
+<html lang="es-ES">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Jesús Roca">
+        <meta name="keywords" content="computers,programming,web design,html,html5">
+        <meta name="descripcion" content="Mi primera página web, para recordar mis conocimientos de HTML">
+        <meta name="lang" content="es-ES">
+        <title>Mi primera página HTML</title>
+        <link rel="stylesheet" href="./estilos.css">
+        <link rel="icon" type="image/png" href="./icon.png">
+        <!-- Otra imagen de windows <link rel="icon" type="image/x-icon" href="./icon.ico" sizes="32x32"> -->
+        <!--<base href="./img/">-->
+    </head>
+    <body>
+        <main name="contenido">
+            <form name="practica2" method="post" action="form.php">
+                <h1 src="disco.webp" alt="DiscoStu" title="DiscoStu" width="200px" height="200px">
+                    <img src="./img/disco.webp" alt="DiscoStu" title="DiscoStu" width="150px" height="150px">Cornershop Records!
+                </h1>
+                <h2 id="inicio">
+                    Información
+                </h2>
+                <p>
+                    <h4>Índice</h4>
+                    <ul><!--Esto no funciona si no quitamos <base href="./img/" al principio-->
+                        <li><a href="#somos">¿Quienes somos?</a></li>
+                        <li><a href="#envios">Envíos y pagos</a></li>
+                        <li><a href="#cambios">Cambios y devolución</a></li>
+                        <li><a href="#politica">Política y Privacidad</a></li>
+                    </ul>
+                </p>
+                <p>
+                    <h3 id="somos">¿Quienes somos?</h3>
+                    Mucho texto. Mucho texto. Mucho texto. Mucho texto. Mucho texto.
+                </p>
+                <p>
+                    <ul>
+                        <p>
+                        <li>Contacto:</li><br>
+                        <ol type="I">
+                            <li>Teléfono: 956346578 | Móvil: 664545367</li>
+                            <li>E-mail: cornershoprecord@gmail.com</li>
+                            <li>Dirección: Avnd. Los Patos, California.</li>
+                        </ol>
+                        </p>
+                    </ul>
+                    <figure id="imagen">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="./img/tienda3.jpg">
+                            <source media="(min-width:800px)" srcset="./img/tienda2.jpg">
+                            <img src="./img/tienda1.jpg">
+                        </picture>
+                        <figcaption>Cornershop Records!</figcaption>
+                    </figure>
+                    <h3 id="envios">Envíos y pagos</h3>
+                    <ul>
+                        <li>Cómo realizar tu pedido.</li>
+                            <p>
+                                Mucho texto
+                            </p>
+                            <li>Cómo pagar tu pedido.</li>
+                            <p>
+                                Mucho texto.
+                            </p>
+                            <li>Cómo conocer la situación de un pedido ya realizado.</li>
+                            <p>
+                                Mucho texto.
+                            </p>
+                    </ul>
+                    <h3 id="cambios">Cambios y devoluciones</h3>
+                    <ul>
+                        <li>Garantía</li>
+                        <p>
+                            Mucho texto.
+                        </p>
+                        <li>Devolución</li>
+                        <p>
+                            Mucho texto.
+                        </p>
+                    </ul>
+                    <h3 id="politica">Política y privacidad</h3>
+                    <p>
+                        Mucho texto.
+                    </p>
+                    <ul>
+                        <h4>Responsable</h4>
+                        <p>
+                            Poco texto.
+                        </p>
+                        <h4>Ámbito de aplicación</h4>
+                        <p>
+                            Mucho texto.
+                        </p>
+                        <h4>Finalidad</h4>
+                        <p>
+                            Mucho texto.
+                        </p>
+                        <h4>Ámbito de aplicación</h4>
+                        <p>
+                            Mucho texto.
+                        </p>
+                        <h4>Política de coockies</h4>
+                        <p>
+                            Mucho texto.
+                        </p>
+                    </ul>
+                    <p>
+                        <a href="#inicio">Ir al Inicio</a>
+                    </p>
+                </p>
+            </form>
+        </main>
+    </body>
+</html>
