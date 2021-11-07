@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="descripcion" content="Mi primer formulario HTML con diferentes tipos de entrada">
-        <meta name="author" content="Jesús Roca">
-        <meta name="keywords" content="html, HTML, diw, desarrollo de aplicaciones, desarrollo de aplicaciones web, formularios, html5, diseño de interfaces">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="lang" content="es-ES">
-        <title>Formulario de mi página web</title>
 
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripcion" content="Mi primer formulario HTML con diferentes tipos de entrada">
+    <meta name="author" content="Jesús Roca">
+    <meta name="keywords" content="html, HTML, diw, desarrollo de aplicaciones, desarrollo de aplicaciones web, formularios, html5, diseño de interfaces">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="lang" content="es-ES">
+    <title>Formulario de mi página web</title>
 
-            input:required{
-                background-color: blueviolet;
-                border: 3px solid red;
-            }
+    <style>
+        input:required {
+            background-color: blueviolet;
+            border: 3px solid red;
+        }
+        
+        input:optional {
+            background-color: burlywood;
+        }
+        
+        input:in-range {
+            background-color: aqua;
+        }
+        
+        input:out-of-range {
+            background-color: red;
+        }
+        
+        input:valid {
+            color: darkgreen;
+        }
+        
+        input:invalid {
+            color: coral;
+        }
+        
+        input[type="checkbox"]:checked {
+            box-shadow: 3px 3px 5px blue;
+        }
+        
+        input[type="checkbox"]:not(:checked) {
+            box-shadow: 3px 3px 5px orange;
+        }
+        
+        input:default {
+            background-color: 3px 3px 5px orangered;
+        }
+    </style>
 
-            input:optional{
-                background-color: burlywood;
-            }
+</head>
 
-            input:in-range{
-                background-color: aqua;
-            }
-            input:out-of-range{
-                background-color: red;
-            }
-
-            input:valid{
-                color: darkgreen;
-            }
-            input:invalid{
-                color: coral;
-            }
-            input[type="checkbox"]:checked{
-                box-shadow: 3px 3px 5px blue;
-            }
-            input[type="checkbox"]:not(:checked){
-                box-shadow: 3px 3px 5px orange;
-            }
-            input:default{
-                background-color: 3px 3px 5px orangered;
-            }
-
-
-        </style>
-
-    </head>
-    <body>
-        <main name="contenido">
-            <form name="miformulario" method="post" action="form.php">
-                <fieldset>
-                    <legend>Datos personales</legend>
-                    <p>
+<body>
+    <main name="contenido">
+        <form name="miformulario" method="post" action="form.php">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p>
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" size="15" maxlength="10" required>
-                    </p>
-                    <p>
+                </p>
+                <p>
                     <label for="apellido">Apellidos:</label>
                     <input type="text" name="apellido" id="apellido" size="40" maxlength="40" required>
-                    </p>
-                    <p>
-                        <label for="correo">Dirección de correo electrónico</label>
-                        <input type="email" name="correo" id="correo" size="40" disabled value="jesusito@gmail.com">
-                    </p>
-                    <p>
-                        <label for="pass">Contraseña secreta</label>
-                        <input type="password" name="pass" id="pass" size="10"required autofocus>
-                    </p>
-                    <p>
-                        <label for="fecnac">Fecha de nacimiento</label>
-                        <input type="date" name="fecnac" id="fecnac" value="2021-01-01">
-                    </p>
-                    <p>
-                        <label for="matricula">Matrícula</label>
-                        <input type="text" name="matricula" id="matricula" size="8" maxlength="8" pattern="[0-9]{4}((-)|\s)?[BCDFGHJKLMNPRSTVWXYZ]{3}">
-                    </p>
+                </p>
+                <p>
+                    <label for="correo">Dirección de correo electrónico</label>
+                    <input type="email" name="correo" id="correo" size="40" disabled value="jesusito@gmail.com">
+                </p>
+                <p>
+                    <label for="pass">Contraseña secreta</label>
+                    <input type="password" name="pass" id="pass" size="10" required autofocus>
+                </p>
+                <p>
+                    <label for="fecnac">Fecha de nacimiento</label>
+                    <input type="date" name="fecnac" id="fecnac" value="2021-01-01">
+                </p>
+                <p>
+                    <label for="matricula">Matrícula</label>
+                    <input type="text" name="matricula" id="matricula" size="8" maxlength="8" pattern="[0-9]{4}((-)|\s)?[BCDFGHJKLMNPRSTVWXYZ]{3}">
+                </p>
                 <fieldset>
                     <legend>Género</legend>
                     <p>
                         <p>
-                        <laber for="genero">Mujer</laber>
-                        <input type="radio" name="genero" id="mujer" value="M">
+                            <laber for="genero">Mujer</laber>
+                            <input type="radio" name="genero" id="mujer" value="M">
                         </p>
                         <p>
-                        <laber for="genero">Hombre</laber>
-                        <input type="radio" name="genero" id="hombre" value="H">
+                            <laber for="genero">Hombre</laber>
+                            <input type="radio" name="genero" id="hombre" value="H">
                         </p>
                         <p>
-                        <laber for="genero">Otro</laber>
-                        <input type="radio" name="genero" id="otro" value="O" checked>
+                            <laber for="genero">Otro</laber>
+                            <input type="radio" name="genero" id="otro" value="O" checked>
                         </p>
                     </p>
                 </fieldset>
@@ -99,21 +103,21 @@
                 </p>
                 <p>
                     <label for="tlf">Número de teléfono</label>
-                    <input type="tel" name="tlf" id="tlf" size="20" readonly="" value="9563402523" >
+                    <input type="tel" name="tlf" id="tlf" size="20" readonly="" value="9563402523">
                 </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Otros datos</legend>
-                    <p>
-                        <label for="numfav">Mi número par favorito es:</label>
-                        <input type="number" name="numfav" id="numfav" size="5" min="0" max="100" step="2" value="4">
-                    </p>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
                 <p>
-                <fieldset>
-                    <legend>Intereses personales:</legend>
+                    <label for="numfav">Mi número par favorito es:</label>
+                    <input type="number" name="numfav" id="numfav" size="5" min="0" max="100" step="2" value="4">
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Intereses personales:</legend>
                         <p>
-                        <label for="dep">Deporte</label>
-                        <input type="checkbox" name="dep" id="dep" value="d">
+                            <label for="dep">Deporte</label>
+                            <input type="checkbox" name="dep" id="dep" value="d">
                         </p>
                         <p>
                             <label for="dep">Comida</label>
@@ -127,7 +131,7 @@
                             <label for="dep">Vaguear</label>
                             <input type="checkbox" name="vag" id="vag" value="v" checked>
                         </p>
-                </fieldset>
+                    </fieldset>
                 </p>
                 <p>
                     <label for="turno">Turno de Trabajo</label>
@@ -179,13 +183,14 @@
                     <label for="comentario">Comentarios: </label><br>
                     <textarea name="comentario" id="comentario" rows="5" cols="60" spellcheck="true"></textarea>
                 </p>
-                </fieldset>
-                <p>
-                    <div><input type="reset" value="Reiniciar"><br></div>
-                    <hr>
-                    <div><input type="submit" value="Enviar"></div>
-                </p>
-            </form>
-        </main>
-    </body>
+            </fieldset>
+            <p>
+                <div><input type="reset" value="Reiniciar"><br></div>
+                <hr>
+                <div><input type="submit" value="Enviar"></div>
+            </p>
+        </form>
+    </main>
+</body>
+
 </html>

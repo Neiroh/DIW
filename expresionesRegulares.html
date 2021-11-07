@@ -21,7 +21,7 @@
                         <h2>Validación de Datos</h2>
                     </legend>
                     <label for="expreg">Introduce el valor: </label>
-                    <input type="text" name="expreg" id="expreg" pattern="(?=.{6,}$)(?!.*[aeiou][aeiou][AEIOU])([AEIOU][AEIOUaeiou]*[aeiou])" required>
+                    <input type="text" name="expreg" id="expreg" pattern="(?=.{5}$)(?!.*(11|22|33|00))[A-Z]{3}[0-3]{2}" required autofocus>
                 </p>
                 <p>
                     <input type="submit" value="Enviar">
