@@ -26,12 +26,24 @@ p {
     font-size: 1.4em;
 }
 
+h1 {
+    font-family: 'Peachy Mochi';
+    font-size: 1.6em;
+}
+
 strong {
     font-size: 1.7em;
 }
 
 html {
+    /*background-color: var(--colorPrincipal);
+    background-image: url(./img/foto03.png), url(./img/foto08.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center left, center right;*/
+    background: url('./img/foto03.png') left top no-repeat, url('./img/foto08.png') center right repeat-y;
     background-color: var(--colorPrincipal);
+    background-attachment: fixed;
 }
 
 .seccion1 {
@@ -183,6 +195,15 @@ h1::first-letter {
     text-align: center;
 }
 
+.deluxe {
+    /*text-align: justify;*/
+    letter-spacing: 1.5pt;
+    word-spacing: 3pt;
+    text-align-last: center;
+    text-decoration: underline;
+    text-indent: 5%;
+}
+
 .deluxe span {
     background-color: transparent;
     color: green;
@@ -192,4 +213,11 @@ h1::first-letter {
     line-height: 1.2em;
     font-style: normal;
     font-variant: small-caps;
+}
+
+@font-face {
+    font-family: 'Peachy Mochi';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./img/Peachy\ Mochi.ttf') format('truetype');
 }
