@@ -27,7 +27,7 @@
         $region = $_POST['region'];
         $postcode = $_POST['postcode'];
         $regionalCode = $_POST['regionalCode'];
-        $subscription = $_POST['subList'];
+        $subscription = $_POST['sub'];
         $subCode = $_POST['subCode'];
         $science = $_POST['science'];
         $artCraft = $_POST['artCraft'];
