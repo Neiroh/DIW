@@ -34,6 +34,8 @@ figcaption {
 
 ul {
     list-style-type: circle;
+    list-style-position: outside;
+    list-style-image: url();
 }
 
 ol li {
