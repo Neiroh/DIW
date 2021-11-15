@@ -53,6 +53,22 @@
 
         <fieldset>
 
+            <legend>Contact Information</legend>
+
+            <p>
+                <label for="mail">Email: </label>
+                <input type="email" name="mail" required>
+            </p>
+
+            <p>
+                <label for="tlf">Telephone: </label>
+                <input type="number" name="tlf" required>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
             <legend>Section Information</legend>
 
                 <input type="radio" id="section" name="section" value="food">

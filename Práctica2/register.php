@@ -17,9 +17,13 @@
 
     <?php
 
+    error_reporting(0);
+
         $name = $_POST['name'];
         $surname = $_POST['surname'];
         $birth = $_POST['birth'];
+        $mail = $_POST['mail'];
+        $tlf = $_POST['tlf'];
 
         if($_POST['gen'] == "male"){
 
@@ -63,6 +67,8 @@
         echo 'Surname: ' . $surname . '<br>';
         echo 'Birthdate: ' . $birth . '<br>';
         echo 'Gender: ' . $gen . '<br>';
+        echo 'Email: ' . $mail . '<br>';
+        echo 'Telephone Number: ' . $tlf . '<br>';
         echo 'Section: ' . $section . '<br>';
         echo 'Content: ' . $content . '<br>';
 
