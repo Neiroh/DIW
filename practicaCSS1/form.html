@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Jesús Roca">
+    <meta name="keywords" content="computers,programming,web design,html,html5">
+    <meta name="descripcion" content="Mi primera página web, para recordar mis conocimientos de HTML">
+    <meta name="lang" content="es-ES">
+    <title>Mi primera página HTML</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" type="image/png" href="../icon.png">
+</head>
+
+<body>
+
+    <h1>Introduzca Datos</h1>
+
+    <form action="envio.php" method="post">
+
+        <fieldset>
+
+            <legend>Datos Personales</legend>
+
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Obligatorio" required>
+            </p>
+
+            <p>
+                <label for="ap">Apellidos: </label>
+                <input type="text" name="ap" placeholder="Obligatorio" size="50" required>
+            </p>
+
+            <fieldset class="dentro">
+
+                <legend>Edad: </legend>
+
+                <input type="radio" name="edad" id="18" value="18">
+                <label for="edad">18 - 25</label>
+
+                <input type="radio" name="edad" id="26" value="26">
+                <label for="edad">26 - 35</label>
+
+                <input type="radio" name="edad" id="36" value="36">
+                <label for="edad">36 - 45</label>
+
+                <input type="radio" name="edad" id="46" value="46">
+                <label for="edad">46 - 55</label>
+
+                <input type="radio" name="edad" id="56" value="56">
+                <label for="edad">Más de 55</label>
+
+                <input type="radio" name="edad" id="ns" value="ns">
+                <label for="edad">NS/NC</label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Intereses</legend>
+
+                <p>
+                    <input type="checkbox" name="ayl" id="ayl" value="ayl">
+                    <label for="ayl">Arte y Literatura</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="cyt" id="cyt" value="cyt">
+                    <label for="cyt">Ciencia y Tecnología</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="pys" id="pys" value="pys">
+                    <label for="pys">Política y Sociedad</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="oyd" id="oyd" value="oyd">
+                    <label for="oyd">Ocio y Deporte</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="cyt" id="cyt" value="cyt">
+                    <label for="cyt">Cine y Televisión</label>
+                </p>
+
+            </fieldset>
+
+            <p>
+
+                <label for="cp">Código Postal: </label>
+                <input type="number" name="cp" id="cp" pattern="\d{5}" size="5">
+
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Otros Datos</legend>
+
+            <h3>Color Favorito</h3>
+
+            <input type="radio" name="color" id="color" value="rojo">
+            <label for="rojo">Rojo</label>
+
+            <input type="radio" name="color" id="color" value="azul">
+            <label for="rojo">Azul</label>
+
+            <input type="radio" name="color" id="color" value="amarillo">
+            <label for="rojo">Amarillo</label>
+
+            <input type="radio" name="color" id="color" value="verde">
+            <label for="rojo">Verde</label>
+
+        </fieldset>
+
+    </form>
+
+</body>
