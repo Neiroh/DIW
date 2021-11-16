@@ -308,7 +308,14 @@ h1::first-letter {
     text-align: center;
     color: white;
     background-color: black;
-    animation: mianimacion 10s 0s infinite alternate linear forwards;
+    /*animation: mianimacion 10s 0s infinite alternate linear forwards;*/
+    animation-name: mianimacion;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
 }
 
 @keyframes mianimacion {
@@ -320,9 +327,11 @@ h1::first-letter {
     }
     60% {
         background-color: crimson;
+        transform: rotatey(180deg);
     }
     80% {
         background-color: hotpink;
+        font-size: 2.4em;
     }
     100% {
         background-color: gold;
