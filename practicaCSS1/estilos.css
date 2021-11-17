@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: paleturquoise;
+    font-weight: bold;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+input {
+    background-color: mistyrose;
+}
+
+form {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+fieldset {
+    background-color: lavender;
+}
+
+fieldset>fieldset {
+    background-color: peachpuff;
+    font-weight: normal;
+}
+
+input[type="checkbox"] legend {
+    color: blue;
+}
+
+input[pattern="\d{5}"] {}
+
+label {
+    color: green;
+}
+
+h3 {
+    color: darkorchid;
+}
+
+input::placeholder {
+    color: mediumvioletred;
+}
+
+fieldset>fieldset>label {
+    color: teal;
+}
+
+.edad {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+#diw {}
+
+#porc {
+    background-color: lemonchiffon;
+}
+
+.boton {}
+
+.color {
+    color: rebeccapurple;
+}

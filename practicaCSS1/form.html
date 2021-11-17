@@ -39,22 +39,22 @@
                 <legend>Edad: </legend>
 
                 <input type="radio" name="edad" id="18" value="18">
-                <label for="edad">18 - 25</label>
+                <label for="edad" class="edad">18 - 25</label>
 
                 <input type="radio" name="edad" id="26" value="26">
-                <label for="edad">26 - 35</label>
+                <label for="edad" class="edad">26 - 35</label>
 
                 <input type="radio" name="edad" id="36" value="36">
-                <label for="edad">36 - 45</label>
+                <label for="edad" class="edad">36 - 45</label>
 
                 <input type="radio" name="edad" id="46" value="46">
-                <label for="edad">46 - 55</label>
+                <label for="edad" class="edad">46 - 55</label>
 
                 <input type="radio" name="edad" id="56" value="56">
-                <label for="edad">Más de 55</label>
+                <label for="edad" class="edad">Más de 55</label>
 
                 <input type="radio" name="edad" id="ns" value="ns">
-                <label for="edad">NS/NC</label>
+                <label for="edad" class="edad">NS/NC</label>
 
             </fieldset>
 
@@ -62,37 +62,27 @@
 
                 <legend>Intereses</legend>
 
-                <p>
-                    <input type="checkbox" name="ayl" id="ayl" value="ayl">
-                    <label for="ayl">Arte y Literatura</label>
-                </p>
+                <input type="checkbox" name="ayl" id="ayl" value="ayl">
+                <label for="ayl">Arte y Literatura</label><br>
 
-                <p>
-                    <input type="checkbox" name="cyt" id="cyt" value="cyt">
-                    <label for="cyt">Ciencia y Tecnología</label>
-                </p>
+                <input type="checkbox" name="cyt" id="cyt" value="cyt">
+                <label for="cyt">Ciencia y Tecnología</label><br>
 
-                <p>
-                    <input type="checkbox" name="pys" id="pys" value="pys">
-                    <label for="pys">Política y Sociedad</label>
-                </p>
+                <input type="checkbox" name="pys" id="pys" value="pys">
+                <label for="pys">Política y Sociedad</label><br>
 
-                <p>
-                    <input type="checkbox" name="oyd" id="oyd" value="oyd">
-                    <label for="oyd">Ocio y Deporte</label>
-                </p>
+                <input type="checkbox" name="oyd" id="oyd" value="oyd">
+                <label for="oyd">Ocio y Deporte</label><br>
 
-                <p>
-                    <input type="checkbox" name="cyt" id="cyt" value="cyt">
-                    <label for="cyt">Cine y Televisión</label>
-                </p>
+                <input type="checkbox" name="cyt" id="cyt" value="cyt">
+                <label for="cyt">Cine y Televisión</label><br>
 
             </fieldset>
 
             <p>
 
                 <label for="cp">Código Postal: </label>
-                <input type="number" name="cp" id="cp" pattern="\d{5}" size="5">
+                <input type="text" name="cp" id="cp" pattern="\d{5}" size="5">
 
             </p>
 
@@ -105,18 +95,46 @@
             <h3>Color Favorito</h3>
 
             <input type="radio" name="color" id="color" value="rojo">
-            <label for="rojo">Rojo</label>
+            <label for="rojo" class="color">Rojo</label>
 
             <input type="radio" name="color" id="color" value="azul">
-            <label for="rojo">Azul</label>
+            <label for="rojo" class="color">Azul</label>
 
             <input type="radio" name="color" id="color" value="amarillo">
-            <label for="rojo">Amarillo</label>
+            <label for="rojo" class="color">Amarillo</label>
 
             <input type="radio" name="color" id="color" value="verde">
-            <label for="rojo">Verde</label>
+            <label for="rojo" class="color">Verde</label>
+
+            <h3>Asignaturas Favoritas</h3>
+
+            <input type="checkbox" name="dwec" id="dwec" value="dwec">
+            <label for="dwec">DWEC</label><br>
+
+            <input type="checkbox" name="dwes" id="dwes" value="dwes">
+            <label for="dwes">DWES</label><br>
+
+            <input type="checkbox" name="diw" id="diw" value="diw">
+            <label for="diw">DIW</label><br>
+
+            <input type="checkbox" name="daw" id="daw" value="awd">
+            <label for="daw">DAW</label><br>
+
+            <input type="checkbox" name="eiem" id="eiem" value="eiem">
+            <label for="eiem">EIEM</label><br>
+
+            <h3>Probabilidad de Aprobar</h3>
+
+            <p>
+                <label for="porc">Porcentaje: </label>
+                <input type="number" min="0" max="100" step="5" name="porc" id="porc" start="50">
+            </p>
 
         </fieldset>
+
+        <input type="submit" name="envio" class="boton" value="Enviar Formulario">
+
+        <input type="reset" name="reset" class="boton" value="Reiniciar Formulario">
 
     </form>
 
