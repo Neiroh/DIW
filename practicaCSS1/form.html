@@ -26,7 +26,7 @@
 
             <p>
                 <label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" placeholder="Obligatorio" required>
+                <input type="text" name="nombre" placeholder="Obligatorio" required autofocus>
             </p>
 
             <p>
@@ -38,19 +38,19 @@
 
                 <legend>Edad: </legend>
 
-                <input type="radio" name="edad" id="18" value="18">
+                <input type="radio" name="edad" id="e18" value="18">
                 <label for="edad" class="edad">18 - 25</label>
 
-                <input type="radio" name="edad" id="26" value="26">
+                <input type="radio" name="edad" id="e26" value="26">
                 <label for="edad" class="edad">26 - 35</label>
 
-                <input type="radio" name="edad" id="36" value="36">
+                <input type="radio" name="edad" id="e36" value="36">
                 <label for="edad" class="edad">36 - 45</label>
 
-                <input type="radio" name="edad" id="46" value="46">
+                <input type="radio" name="edad" id="e46" value="46">
                 <label for="edad" class="edad">46 - 55</label>
 
-                <input type="radio" name="edad" id="56" value="56">
+                <input type="radio" name="edad" id="e56" value="56">
                 <label for="edad" class="edad">Más de 55</label>
 
                 <input type="radio" name="edad" id="ns" value="ns">
@@ -114,7 +114,7 @@
             <input type="checkbox" name="dwes" id="dwes" value="dwes">
             <label for="dwes">DWES</label><br>
 
-            <input type="checkbox" name="diw" id="diw" value="diw">
+            <input type="checkbox" name="diw" id="diw" value="diw" checked>
             <label for="diw">DIW</label><br>
 
             <input type="checkbox" name="daw" id="daw" value="awd">
@@ -127,14 +127,16 @@
 
             <p>
                 <label for="porc">Porcentaje: </label>
-                <input type="number" min="0" max="100" step="5" name="porc" id="porc" start="50">
+                <input type="number" min="0" max="100" step="5" name="porc" id="porc" value="50">
             </p>
 
         </fieldset>
 
-        <input type="submit" name="envio" class="boton" value="Enviar Formulario">
+        <p class="botones">
+            <input type="submit" name="envio" class="boton" value="Enviar Formulario">
 
-        <input type="reset" name="reset" class="boton" value="Reiniciar Formulario">
+            <input type="reset" name="reset" class="botonRein" value="Reiniciar Formulario">
+        </p>
 
     </form>
 

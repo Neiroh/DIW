@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+legend {
+    color: royalblue;
 }
 
 body {
@@ -8,7 +13,7 @@ body {
 }
 
 h1 {
-    color: blue;
+    color: royalblue;
     text-align: center;
 }
 
@@ -28,13 +33,32 @@ fieldset {
 fieldset>fieldset {
     background-color: peachpuff;
     font-weight: normal;
+    font-style: italic;
 }
 
 input[type="checkbox"] legend {
     color: blue;
 }
 
-input[pattern="\d{5}"] {}
+input[type="radio"]:checked+label {
+    color: green;
+}
+
+#cp:invalid {
+    background-color: orangered;
+}
+
+input[type="text"] {
+    /*border-top: 2px solid grey;
+    border-left: 2px solid grey;*/
+    border-bottom: none;
+    border-right: none;
+}
+
+input[type="text"]:focus {
+    outline-color: rebeccapurple;
+    border-color: rebeccapurple;
+}
 
 label {
     color: green;
@@ -46,10 +70,16 @@ h3 {
 
 input::placeholder {
     color: mediumvioletred;
+    opacity: 0.5;
+    font-style: italic;
 }
 
 fieldset>fieldset>label {
     color: teal;
+}
+
+input[type="radio"]:hover {
+    box-shadow: 0px 0px 10px -2px green;
 }
 
 .edad {
@@ -57,13 +87,54 @@ fieldset>fieldset>label {
     font-weight: bold;
 }
 
-#diw {}
+#diw {
+    box-shadow: 3px 3px 3px 0px orange;
+}
 
 #porc {
     background-color: lemonchiffon;
 }
 
-.boton {}
+
+/*#e36 {
+    box-shadow: 0px 0px 10px 0.5px green;
+}*/
+
+.boton {
+    font-size: medium;
+    color: royalblue;
+    border-radius: 5px;
+    background-color: lemonchiffon;
+    padding: 10px 10px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+}
+
+.botonRein {
+    font-size: medium;
+    color: grey;
+    border-radius: 5px;
+    background-color: lemonchiffon;
+    padding: 10px 10px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+}
+
+.boton:hover {
+    border: 0;
+}
+
+.botonRein:hover {
+    border: 0;
+}
+
+.botones {
+    text-align: center;
+}
 
 .color {
     color: rebeccapurple;
