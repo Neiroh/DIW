@@ -51,7 +51,7 @@ div {
 
 @keyframes animate {
   20% {
-    transform: translateX(80vw);
+    transform: translateX();
   }
   40% {
     transform: translateX(50vw) translateY(50vw);
