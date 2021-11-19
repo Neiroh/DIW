@@ -29,6 +29,7 @@ h1 {
 }
 
 div {
+    background-color: red;
     margin: 2vh 3vw;
     padding: 0 1vw;
     text-align: center;
@@ -39,10 +40,9 @@ div {
     font-style: normal;
     font-weight: bold;
     text-shadow: 10px white;
-    background-color: rebeccapurple;
     animation-name: animate;
-    animation-duration: 10s;
-    animation-delay: 0s;
+    animation-duration: 20s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
@@ -52,20 +52,26 @@ div {
 @keyframes animate {
     10% {
         transform: translateX(calc(94vw - 10em));
+        background-color: orangered;
     }
     20% {
+        background-color: yellow;
         transform: translateX(calc(94vw - 10em)) rotatez(180deg);
     }
     40% {
-        transform: translateX(calc(70vw - 10em)) translateY(calc(45vh - 6vh)) rotatey(270deg) rotatex(-45deg);
+        background-color: green;
+        transform: translateX(calc(70vw - 10em)) translateY(calc(45vh - 15vh)) rotatez(90deg) rotatey(180deg);
     }
     60% {
-        transform: translateX(calc(94vw - 10em)) translateY(calc(83vh - 6vh)) rotatez(180deg);
+        background-color: cyan;
+        transform: translateX(calc(94vw - 10em)) translateY(calc(83vh - 15vh)) rotatez(180deg);
     }
     80% {
-        transform: translateX(0) translateY(calc(83vh - 6vh)) rotatez(180deg) rotatey(180deg);
+        background-color: purple;
+        transform: translateX(0) translateY(calc(83vh - 15vh)) rotatez(180deg) rotatey(180deg);
     }
     100% {
+        background-color: darkred;
         transform: translateX(0px) translateY(0px) rotatey(180deg) rotatez(180deg) rotatex(180deg);
     }
 }
