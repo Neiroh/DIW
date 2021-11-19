@@ -66,8 +66,7 @@ div {
         transform: translateX(0) translateY(calc(83vh - 6vh)) rotatez(180deg) rotatey(180deg);
     }
     100% {
-        transform: translateX(0px) translateY(0px) rotatey(180deg)/*rotatez(180deg)*/
-        ;
+        transform: translateX(0px) translateY(0px) rotatey(180deg) rotatez(180deg) rotatex(180deg);
     }
 }
 
