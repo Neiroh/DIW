@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5px;
+    background: linear-gradient(to bottom, darkorange 0%, darkred 100%);
+}
+
+header {
+    font-size: 2em;
+    color: darkred;
+    height: 15vh;
+    width: calc(100vw - 5px);
+    padding: 5vh;
+}
+
+main {
+    height: 70vh;
+    width: calc(100vw - 5px);
+}
+
+footer {
+    text-align: center;
+    font-size: 2em;
+    height: 15vh;
+    width: calc(100vw - 5px);
+    padding-top: 1em;
+    color: darkorange;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bloque {
+    margin: auto;
+    width: calc(33vw - 2px - 5px);
+    border: 3px solid white;
+    display: inline-block;
+}
+
+.icon {
+    text-align: center;
+    height: 50%;
+}
+
+.texto {
+    text-align: center;
+    padding: 17vh 5vw;
+    font-size: 2em;
+}
+
+i {
+    font-size: 15em;
+}
