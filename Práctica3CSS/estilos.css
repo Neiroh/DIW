@@ -27,7 +27,7 @@ footer {
     font-size: 2em;
     height: 15vh;
     width: calc(100vw - 5px);
-    padding-top: 1em;
+    padding-top: 2em;
     color: darkorange;
 }
 
@@ -45,6 +45,7 @@ h1 {
 .icon {
     text-align: center;
     height: 50%;
+    padding-top: 2em;
 }
 
 .texto {
