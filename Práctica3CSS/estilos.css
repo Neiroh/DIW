@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    font-size: 2em;
+    font-size: 2VW;
     color: darkred;
     height: 15vh;
     width: calc(100vw - 5px);
@@ -24,10 +24,10 @@ main {
 
 footer {
     text-align: center;
-    font-size: 2em;
-    height: 15vh;
+    font-size: 2vw;
+    height: 14vh;
     width: calc(100vw - 5px);
-    padding-top: 2em;
+    padding-top: 2vh;
     color: darkorange;
 }
 
@@ -35,25 +35,50 @@ h1 {
     text-align: center;
 }
 
+p {
+    transform: rotateZ(180deg);
+    opacity: 100%;
+    font-size: 2vw;
+}
+
+p:hover {
+    transition: transform 2s linear, opacity 2s linear, font-size 2s linear;
+    transform: rotateZ(0deg);
+    opacity: 100%;
+    font-size: 2vw;
+}
+
 .bloque {
     margin: auto;
     width: calc(33vw - 2px - 5px);
+    height: 70vh;
     border: 3px solid white;
     display: inline-block;
 }
 
+.bloque:hover {
+    transition: background-color 2s linear;
+    background-color: indigo;
+}
+
 .icon {
     text-align: center;
-    height: 50%;
-    padding-top: 2em;
+    height: 40%;
+    padding-top: 2vh;
 }
 
 .texto {
     text-align: center;
     padding: 17vh 5vw;
-    font-size: 2em;
+    font-size: 2vh;
 }
 
 i {
-    font-size: 15em;
+    font-size: 15vw;
+}
+
+i:hover {
+    transition: font-size 2s linear, color 2s linear;
+    font-size: 20vw;
+    color: darkorange;
 }
