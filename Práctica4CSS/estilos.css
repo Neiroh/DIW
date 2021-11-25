@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 3vh;
+    text-align: center;
+}
+
+body {
+    background-color: darkseagreen;
+}
+
+header {
+    background-color: gainsboro;
+    margin: 2vh 10vw;
+}
+
+main {
+    margin: 2vh 10vw;
+    border: 2px solid white;
+}
+
+footer {
+    margin: 2vh 10vw;
+}
+
+div {
+    background-color: seagreen;
+    margin: 2vh 0;
+}
+
+h2 {
+    background-color: gainsboro;
+}
+
+ul {
+    background-color: darkslategrey;
+    border: 5px solid grey;
+    margin: 2vh 5vw;
+}
+
+li {
+    text-align: left;
+}
+
+.imagen {
+    text-align: center;
+}
