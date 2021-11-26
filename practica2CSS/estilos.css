@@ -41,8 +41,8 @@ div {
     font-weight: bold;
     text-shadow: 10px white;
     animation-name: animate;
-    animation-duration: 20s;
-    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
