@@ -7,7 +7,7 @@
 
 body {
     margin: 5px;
-    width: calc(100vw - 10px);
+    width: calc(100vw - 20px);
     background: linear-gradient(to bottom, darkorange 0%, darkred 100%);
 }
 
@@ -15,20 +15,20 @@ header {
     font-size: 2VW;
     color: darkred;
     height: 15vh;
-    width: calc(100vw - 10px);
+    width: calc(100vw - 20px);
     padding: 5vh;
 }
 
 main {
     height: 70vh;
-    width: calc(100vw - 10px);
+    width: calc(100vw - 20px);
 }
 
 footer {
     text-align: center;
     font-size: 2vw;
     height: 14vh;
-    width: calc(100vw - 7px);
+    width: calc(100vw - 20px);
     padding-top: 2vh;
     color: darkorange;
 }
@@ -54,7 +54,7 @@ h1 {
 
 .bloque {
     margin: auto 5px;
-    width: calc(33vw - 17px);
+    width: calc(33vw - 20px);
     height: 70vh;
     border: 5px solid white;
     border-radius: 10px;

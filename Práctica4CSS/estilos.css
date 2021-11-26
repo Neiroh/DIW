@@ -8,6 +8,7 @@
 
 body {
     background-color: darkseagreen;
+    font-family: 'Domine', serif;
 }
 
 header {
@@ -16,33 +17,87 @@ header {
 }
 
 main {
-    margin: 2vh 10vw;
+    margin: 1vh 10vw;
+    padding: 0 1vw;
     border: 2px solid white;
+    border-radius: 10px;
 }
 
 footer {
     margin: 2vh 10vw;
+    padding: 3vh 0;
+    background-color: lightslategray;
+    border-top: 0.5vh solid white;
+    border-bottom: 0.5vh solid white;
+    height: 10vh;
+    font-size: 1.5vw;
+}
+
+a {
+    color: yellowgreen
+}
+
+a:hover {
+    color: rgb(69, 90, 27);
+    text-shadow: 0px 0px 15px hotpink;
 }
 
 div {
     background-color: seagreen;
-    margin: 2vh 0;
+    color: white;
+    margin: 3vh 0;
+}
+
+p {
+    padding-top: 1.5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: left;
+    padding-bottom: 1.5vh;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 7vw;
+    padding: 6vh 0;
+    color: darkslategrey;
+    letter-spacing: 0.25vw;
 }
 
 h2 {
     background-color: gainsboro;
+    text-align: left;
+    color: darkslategrey;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1vw;
+    padding-left: 0.5vw;
 }
 
 ul {
     background-color: darkslategrey;
     border: 5px solid grey;
     margin: 2vh 5vw;
+    padding: 1vh 2vw;
+}
+
+ul:hover {
+    background-color: rgb(1, 53, 1);
+    border-color: darkgreen;
 }
 
 li {
     text-align: left;
+    font-style: italic;
 }
 
-.imagen {
+img {
+    margin: 2vh 0;
     text-align: center;
+    width: 50vw;
+    /*margin-left: 17%;*/
+}
+
+div p::first-letter {
+    font-size: 3vw;
+    color: rgb(85, 52, 9);
 }
