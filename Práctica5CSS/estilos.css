@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+table {
+    margin: 15vw;
+    width: 70vw;
+}
+
+th {
+    font-size: 4vw;
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: left;
+}
