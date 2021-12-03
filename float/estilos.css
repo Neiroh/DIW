@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lavender;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    color: lightyellow;
+}
+
+p {
+    padding: 15pt;
+    color: purple;
+}
+
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.caja1 {
+    background-color: lightpink;
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+
+.caja2 {
+    width: 15%;
+    height: 25%;
+    background-color: lightskyblue;
+    float: left;
+}
+
+.caja3 {
+    width: 25%;
+    height: 50%;
+    background-color: palegoldenrod;
+    float: left;
+    clear: both;
+}
+
+.caja4 {
+    background-color: palegreen;
+    width: 40%;
+    height: 30%;
+    float: left;
+}
+
+.contenedor {
+    background-color: darkslategrey;
+    margin: 10vh 5vw;
+    width: 90vw;
+    height: 80vh;
+}
