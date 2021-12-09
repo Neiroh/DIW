@@ -35,6 +35,9 @@ h1 {
     color: darkblue;
     text-align: center;
     margin-top: 3vh;
+    font-family: 'Courgette', cursive;
+    font-weight: initial;
+    font-size: 3vw;
 }
 
 h1~h1 {
@@ -82,18 +85,29 @@ td {
 
 table tr:nth-child(odd) {
     background-color: rgb(164, 220, 255);
+    transition: background-color 1s linear;
 }
 
 table tr:nth-child(even) {
     background-color: rgb(136, 201, 255);
-    /*background-color: none;*/
+    transition: background-color 1s linear;
+}
+
+table tr:nth-child(odd):hover {
+    transition: background-color 1s linear;
+    background-color: darkturquoise;
+}
+
+table tr:nth-child(even):hover {
+    transition: background-color 1s linear;
+    background-color: darkturquoise;
 }
 
 .icono {
     text-align: right;
     padding-left: 30vw;
     padding-right: 4vw;
-    font-family: alergeno;
+    font-family: alergeno2;
     font-size: 2em;
 }
 
@@ -103,18 +117,22 @@ table tr:nth-child(even) {
     padding-left: 1vw;
 }
 
+.nombre:hover {
+    text-shadow: 0.5px 0.5px 0px #62a6ff, -0.5px -0.5px 0px #62a6ff, -0.5px 0.5px 0px #62a6ff, 0.5px -0.5px 0px #62a6ff;
+}
+
 .concha {
-    font-family: alergeno;
+    font-family: alergeno2;
     color: blue;
 }
 
 .leche {
-    font-family: alergeno;
+    font-family: alergeno2;
     color: brown;
 }
 
 .trigo {
-    font-family: alergeno;
+    font-family: alergeno2;
     color: darkgoldenrod;
 }
 
@@ -125,16 +143,21 @@ table tr:nth-child(even) {
 }
 
 .huevo {
-    font-family: alergeno;
+    font-family: alergeno2;
     color: coral;
 }
 
 .cangrejo {
-    font-family: alergeno;
+    font-family: alergeno2;
     color: royalblue;
 }
 
 @font-face {
     font-family: alergeno;
     src: url(./font/alergeno.ttf);
+}
+
+@font-face {
+    font-family: alergeno2;
+    src: url(./font/alergeno2.ttf);
 }
