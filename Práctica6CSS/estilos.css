@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.05vw;
+}
+
+header {
+    height: 10vh;
+    background-color: orange;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.caja {
+    padding: 2vh 1vw;
+    background-color: yellowgreen;
+    width: 20vw;
+    height: 10vh;
+    float: left;
+    margin: 1vh 2vw;
+    border: 3px solid black;
+}
+
+.central {
+    height: 25vh;
+    background-color: mediumslateblue;
+    overflow: hidden;
+}
+
+.contenedor {
+    height: 65vh;
+    background-color: teal;
+    overflow: hidden;
+}
+
+.c1 {
+    padding: 2vh 1vw;
+    padding-right: 2vw;
+    margin: 1% 1%;
+    float: right;
+    background-color: violet;
+    width: 32%;
+    height: 75%;
+    border: 3px solid white;
+}
+
+.c2 {
+    padding: 2vh 1vw;
+    padding-right: 2vw;
+    float: right;
+    background-color: darksalmon;
+    width: 65%;
+    height: 30%;
+    margin: 1% 1%;
+    margin-bottom: 0;
+    margin-right: 0;
+    border: 3px solid white;
+}
+
+.c3 {
+    padding: 2vh 1vw;
+    padding-right: 2vw;
+    background-color: indianred;
+    float: right;
+    width: 65%;
+    height: 42%;
+    margin: 1% 1%;
+    margin-right: 0;
+    border: 3px solid white;
+}
+
+.c4 {
+    background-color: darkgoldenrod;
+    clear: both;
+    margin: auto;
+    width: 85vw;
+    border: 3px solid white;
+    height: 10vh;
+    text-align: center;
+    padding-top: 3vh;
+}
