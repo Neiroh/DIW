@@ -58,7 +58,7 @@ footer {
     width: 25%;
     height: 10%;
     float: left;
-    margin: 1vh 1vw;
+    margin: 2vh 1vw;
     border: 2px solid darkorchid;
 }
 
@@ -86,8 +86,8 @@ footer {
 .cuadros3 {
     overflow: hidden;
     float: left;
-    width: 15vw;
-    margin: 1vh 2vw;
+    width: 18vw;
+    margin: 1vh 1vw;
     border: 2px solid red;
     background-color: maroon;
 }
@@ -157,7 +157,7 @@ footer {
 }
 
 .cuadros3:first-child {
-    margin-left: 7.5vw;
+    margin-left: 6vw;
 }
 
 .subtitle {
@@ -170,4 +170,12 @@ footer {
     width: 85%;
     margin: 1vh 7.5vw;
     text-align: left;
+}
+
+.cuadros1:first-child {
+    margin-left: 10vw;
+}
+
+#cuad3 {
+    margin-left: 20vw;
 }
