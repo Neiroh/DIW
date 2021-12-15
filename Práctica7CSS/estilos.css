@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 100%;
 }
 
 body {
@@ -17,6 +18,16 @@ header {
     height: 10vh;
 }
 
+main {
+    background-color: rgb(192, 192, 192);
+    overflow: hidden;
+    margin: 0 3vw;
+}
+
+footer p {
+    font-size: 1em;
+}
+
 h1 {
     border: 5px solid indigo;
     border-radius: 5px;
@@ -25,7 +36,7 @@ h1 {
     width: 75%;
     height: 7.5vh;
     text-align: center;
-    padding-top: 1.5vh;
+    padding-top: 0.5vh;
     margin: 2vh auto;
 }
 
@@ -119,7 +130,7 @@ footer {
 }
 
 .titCuadro2 {
-    text-align: left;
+    text-align: center;
     font-size: 2em;
     height: 12vh;
     width: 30%;
@@ -162,7 +173,7 @@ footer {
 .subtitle {
     background-color: darkblue;
     float: left;
-    padding-top: 1.5vh;
+    padding-top: 0.5vh;
     padding-left: 1%;
     color: slateblue;
     height: 7.5vh;
