@@ -5,10 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-size: 1.05vw;
-}
-
 header {
     height: 10vh;
     background-color: orange;
@@ -16,10 +12,15 @@ header {
     padding-top: 2vh;
 }
 
+body {
+    font-size: 1.3em;
+}
+
 .caja {
+    overflow: hidden;
     padding: 2vh 1vw;
     background-color: yellowgreen;
-    width: 20vw;
+    width: 21vw;
     height: 10vh;
     float: left;
     margin: 1vh 2vw;
@@ -39,6 +40,7 @@ header {
 }
 
 .c1 {
+    overflow: hidden;
     padding: 2vh 1vw;
     padding-right: 2vw;
     margin: 1% 1%;
@@ -50,6 +52,7 @@ header {
 }
 
 .c2 {
+    overflow: hidden;
     padding: 2vh 1vw;
     padding-right: 2vw;
     float: right;
@@ -63,6 +66,7 @@ header {
 }
 
 .c3 {
+    overflow: hidden;
     padding: 2vh 1vw;
     padding-right: 2vw;
     background-color: indianred;
@@ -75,6 +79,7 @@ header {
 }
 
 .c4 {
+    overflow: hidden;
     background-color: darkgoldenrod;
     clear: both;
     margin: auto;
