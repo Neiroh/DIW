@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla';
+}
+
+nav {
+    background-color: crimson;
+    height: 5vh;
+    width: 100vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-image: url(./img/fondo.png);
+    background-size: cover;
+    height: 95vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 30vh;
+    font-family: 'Calistoga';
+    font-size: 4vw;
+}
+
+p {
+    padding-top: 2.5vh;
+    font-size: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+li {
+    transition: background-color 0.5s linear;
+    padding-bottom: 2vh;
+    padding-top: 1.25vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    list-style: none;
+    width: 150px;
+    height: 5vh;
+}
+
+li:hover {
+    background-color: black;
+    transition: background-color 0.5s linear;
+}
+
+.nav1 {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    float: left;
+}
+
+.nav1:hover .nav2 {
+    display: block;
+    background-color: crimson;
+}
+
+.nav2 {
+    display: none;
+    float: left;
+    position: relative;
+    top: 1.8vh;
+    left: -1.5vw;
+}
+
+.nav2:hover {
+    background-color: black;
+    transition: background-color 1s linear;
+}
+
+
+/*.nav2:hover .nav3 {
+    display: block;
+}*/
+
+.nav3 {
+    display: none;
+}
+
+
+/*.nav3:hover .nav4 {
+    display: block;
+}/*
+
+.nav4 {
+    display: none;
+}
