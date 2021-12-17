@@ -7,19 +7,26 @@
 
 nav {
     background-color: crimson;
-    height: 5vh;
+    height: 50px;
     width: 100vw;
+    min-width: 750px;
 }
 
 a {
     color: white;
     text-decoration: none;
+    display: block;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    padding-top: 13px;
 }
 
 main {
+    min-width: 750px;
     background-image: url(./img/fondo.png);
     background-size: cover;
-    height: 95vh;
+    height: calc(100vh - 50px);
     width: 100vw;
     color: white;
     text-align: center;
@@ -40,18 +47,10 @@ p {
 
 li {
     transition: background-color 0.5s linear;
-    padding-bottom: 2vh;
-    padding-top: 1.25vh;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
     list-style: none;
     width: 150px;
-    height: 5vh;
-}
-
-li:hover {
-    background-color: black;
-    transition: background-color 0.5s linear;
+    height: 50px;
+    background-color: crimson;
 }
 
 .nav1 {
@@ -70,28 +69,30 @@ li:hover {
     display: none;
     float: left;
     position: relative;
-    top: 1.8vh;
-    left: -1.5vw;
 }
 
-.nav2:hover {
-    background-color: black;
-    transition: background-color 1s linear;
+a:hover {
+    background-color: #2E0404;
+    transition: background-color 0.5s linear;
 }
 
-
-/*.nav2:hover .nav3 {
+.nav2:hover .nav3 {
     display: block;
-}*/
+    position: relative;
+    left: 150px;
+    top: -50px;
+}
 
 .nav3 {
     display: none;
 }
 
-
-/*.nav3:hover .nav4 {
+.nav3:hover .nav4 {
     display: block;
-}/*
+    position: relative;
+    left: 150px;
+    top: -50px;
+}
 
 .nav4 {
     display: none;
