@@ -68,6 +68,7 @@ p {
 .barraTop,
 .barraMid,
 .barraBot {
+    position: relative;
     height: 5px;
     width: 42px;
     background-color: orange;
@@ -75,53 +76,81 @@ p {
     border-radius: 10px;
 }
 
+.barraTop {
+    top: 5px;
+}
+
+.barraMid {
+    top: 5px;
+}
+
+.barraBot {
+    top: 5px;
+}
+
 input[type="checkbox"]:checked~.contenedor .barraMid {
     transform-origin: left;
     width: 0;
     opacity: 50%;
     background-color: darkgreen;
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
 }
 
 input[type="checkbox"]:checked~.contenedor .barraTop {
     transform-origin: left;
-    transform: rotateZ(45deg);
     background-color: darkgreen;
-    transition: all 0.5s linear;
+    transition: all 0.6s linear;
+    top: 14px;
+    transition-delay: 0.3s;
 }
 
 input[type="checkbox"]:checked~.contenedor .barraBot {
-    transform-origin: left;
-    transform: rotateZ(-45deg);
+    transform-origin: right;
+    transform: rotateZ(90deg);
     background-color: darkgreen;
-    transition: all 0.5s linear;
+    right: 20px;
+    transition: all 0.6s linear;
+    transition-delay: 0.3s;
 }
 
 input[type="checkbox"]~.contenedor .barraMid {
     transform-origin: left;
     width: 42px;
     opacity: 100%;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
+    transition-delay: 0.5s;
 }
 
 input[type="checkbox"]~.contenedor .barraTop {
     transform-origin: left;
     transform: rotateZ(0deg);
     transition: all 0.6s linear;
+    transition-delay: 0.5s;
 }
 
 input[type="checkbox"]~.contenedor .barraBot {
-    transform-origin: left;
-    transform: rotateZ(0);
+    transform-origin: right;
+    transform: rotateZ(0deg);
+    right: 0;
     transition: all 0.6s linear;
+    transition-delay: 0.5s;
+}
+
+input[type="checkbox"]:checked~.contenedor {
+    transform-origin: center;
+    transform: rotateZ(-45deg);
+    transition: all 0.5s linear;
+    transition-delay: 1s;
 }
 
 .contenedor {
     position: absolute;
     z-index: 10;
     float: left;
-    left: 4vw;
-    top: 4vh;
+    left: 40px;
+    top: 40px;
+    transform: rotateZ(0deg);
+    transition: all 0.5s linear;
 }
 
 .menuTexto {
@@ -146,8 +175,8 @@ input[type="checkbox"]~.contenedor .barraBot {
 
 .check {
     position: absolute;
-    top: 4vh;
-    left: 4vw;
+    top: 40px;
+    left: 40px;
     z-index: 11;
     width: 40px;
     height: 45px;
