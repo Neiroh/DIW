@@ -40,19 +40,20 @@ a {
 a:hover {
     text-decoration: underline;
     color: darkgreen;
+    font-weight: bold;
 }
 
 p {
     overflow: hidden;
-    word-spacing: 0.5em;
-    font-size: 1.25em;
+    word-spacing: 0.5vw;
+    font-size: 1.25vw;
     background-color: white;
     font-weight: bold;
     opacity: 100%;
     width: 60vw;
     height: 30vh;
     text-align: left;
-    line-height: 30px;
+    line-height: 4vh;
     border-radius: 15px;
     padding-top: 10px;
     padding-left: 5px;
@@ -126,10 +127,10 @@ input[type="checkbox"]~.contenedor .barraBot {
 
 .menuTexto {
     position: absolute;
-    width: 300px;
+    width: 20vw;
     height: 100vh;
     background-color: mediumseagreen;
-    left: -300px;
+    left: -20vw;
     transition: all 0.5s linear;
     z-index: 5;
 }
