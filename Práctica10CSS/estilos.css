@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    font-family: 'Archivo narrow', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 1.5vh;
+}
+
+hr {
+    width: 65vw;
+    margin: auto;
+    height: 5px;
+    background-color: white;
+    border-radius: 0px;
+}
+
+main {
+    background-color: grey;
+    width: 85vw;
+    height: 30vh;
+    margin: 5vh auto;
+    border-radius: 3px;
+    border: 3px solid darkslategrey;
+}
+
+.contenedorDados {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.dado1,
+.dado2,
+.dado3,
+.dado4,
+.dado5,
+.dado6 {
+    width: 10vh;
+    height: 10vw;
+    margin-top: 3vh;
+    display: flex;
+}
+
+.dado1 {
+    background-color: darkred;
+}
