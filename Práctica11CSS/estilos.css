@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightslategray;
+}
+
+h1 {
+    font-family: 'Archivo narrow', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 1.5vh;
+}
+
+hr {
+    width: 65vw;
+    margin: auto;
+    height: 5px;
+    background-color: white;
+    border-radius: 0px;
+}
+
+main {
+    background-color: darkslategray;
+    margin: 5vh auto;
+    border-radius: 3px;
+    border: 3px solid darkslategrey;
+    margin: 5vw;
+}
+
+.simbol {
+    color: crimson;
+    font-size: 2.5em;
+}
+
+.simbolTop {
+    color: crimson;
+}
+
+.simbolBot {
+    color: crimson;
+    transform: rotateZ(180deg);
+}
+
+.numBot {
+    color: crimson;
+    transform: rotateZ(180deg);
+}
+
+.numTop {
+    color: crimson;
+}
+
+.numTopD {
+    color: crimson;
+    font-size: 0.9em;
+    margin-left: 3px;
+}
+
+.numBotD {
+    color: crimson;
+    font-size: 0.9em;
+    margin-right: 3px;
+}
+
+.contenedorCarta {
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2vw 4vw;
+}
+
+.carta1,
+.carta2,
+.carta3,
+.carta4,
+.carta5,
+.carta6,
+.carta7,
+.carta8,
+.carta9,
+.carta10 {
+    margin-top: 4vh;
+    display: flex;
+    height: 260px;
+    width: 170px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    justify-content: space-between;
+}
+
+.numTop,
+.numBot {
+    display: flex;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.colMid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.colLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.colRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cols {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 115px;
+    height: 240px;
+}
+
+.carta1 .colMid {
+    display: flex;
+    align-self: center;
+}
+
+.carta7 .colMid {
+    margin-top: 50px;
+}
+
+.carta8 .colMid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carta9 .colMid {
+    margin-top: 50px;
+}
+
+.carta10 .colMid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carta5 .colMid {
+    display: flex;
+    align-self: center;
+}
+
+.reves {
+    transform: rotateZ(180deg);
+}
+
+.simbolTop {
+    margin-left: 5px;
+}
+
+.simbolBot {
+    margin-right: 5px;
+}
