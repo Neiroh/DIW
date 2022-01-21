@@ -9,10 +9,11 @@ body {
 }
 
 h1 {
-    font-family: 'Archivo narrow', sans-serif;
+    font-family: 'Literata', sans-serif;
     color: white;
     text-align: center;
     padding-top: 1.5vh;
+    font-size: 3em;
 }
 
 hr {
@@ -29,39 +30,41 @@ main {
     border-radius: 3px;
     border: 3px solid darkslategrey;
     margin: 5vw;
+    border: 3px solid white;
+    border-radius: 5px;
 }
 
 .simbol {
-    color: crimson;
+    color: #900007;
     font-size: 2.5em;
 }
 
 .simbolTop {
-    color: crimson;
+    color: #900007;
 }
 
 .simbolBot {
-    color: crimson;
+    color: #900007;
     transform: rotateZ(180deg);
 }
 
 .numBot {
-    color: crimson;
+    color: #900007;
     transform: rotateZ(180deg);
 }
 
 .numTop {
-    color: crimson;
+    color: #900007;
 }
 
 .numTopD {
-    color: crimson;
+    color: #900007;
     font-size: 0.9em;
     margin-left: 3px;
 }
 
 .numBotD {
-    color: crimson;
+    color: #900007;
     font-size: 0.9em;
     margin-right: 3px;
 }
