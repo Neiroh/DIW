@@ -20,10 +20,10 @@ body {
 header {
     display: flex;
     width: 90vw;
-    height: 5vh;
     background-color: darkslategray;
     margin-left: 5vw;
     justify-content: center;
+    padding-top: 10px;
 }
 
 main {
@@ -39,8 +39,14 @@ p {
     margin: 10px 60px;
 }
 
+.cajaDoble {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .perfil {
-    width: 32.5vw;
+    width: 30vw;
     height: 500px;
     background-color: deeppink;
     border: 1px solid black;
@@ -49,10 +55,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .single {
-    width: 20vw;
+    width: 15vw;
     min-width: 400px;
 }
 
