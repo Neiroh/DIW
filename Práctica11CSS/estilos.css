@@ -184,3 +184,17 @@ main {
 .simbolBot {
     margin-right: 5px;
 }
+
+.as {
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+@-moz-document url-prefix() {
+    .numTop,
+    .numTopD,
+    .numBot,
+    .numBotD {
+        margin-left: 6px;
+    }
+}
