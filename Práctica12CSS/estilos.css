@@ -48,6 +48,7 @@ p {
 .perfil {
     width: 30vw;
     height: 500px;
+    overflow: hidden;
     background-color: deeppink;
     border: 1px solid black;
     text-align: center;
