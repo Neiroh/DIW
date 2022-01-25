@@ -40,6 +40,12 @@ p {
     font-size: 1em;
 }
 
+.fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .cajaDoble {
     display: flex;
     flex-direction: row;
@@ -64,15 +70,20 @@ p {
 
 .single {
     width: 15vw;
-    min-width: 400px;
+    min-width: 300px;
     display: flex;
     flex: 1 0 25%;
+}
+
+.chiquita {
+    width: 150%;
 }
 
 .foto {
     width: 25%;
     display: flex;
     justify-content: center;
+    align-self: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
