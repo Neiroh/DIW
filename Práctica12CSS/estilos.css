@@ -41,6 +41,11 @@ p {
     overflow: hidden;
     font-size: 1.2em;
     color: black;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
 }
 
 .fila {
