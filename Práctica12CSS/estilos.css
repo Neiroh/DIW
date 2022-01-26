@@ -163,7 +163,7 @@ i {
 }
 
 .encargo {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .desc {
@@ -184,7 +184,9 @@ i:hover {
 
 .perfil:hover .separa {
     transition: all 1s linear;
-    transform: scale(1.5);
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 }
 
 .perfil:hover .foto {
@@ -196,4 +198,9 @@ i:hover {
     transform: scale(1.05);
     border: 2px solid black;
     transition: all 1s linear;
+}
+
+.nombre {
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
