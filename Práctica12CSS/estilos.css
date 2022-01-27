@@ -22,14 +22,14 @@ header {
     display: flex;
     width: 90vw;
     height: 10vh;
-    background-color: #B4DEBF;
+    background-color: #1a1a1a;
     margin-left: 5vw;
     justify-content: center;
     padding-top: 10px;
 }
 
 main {
-    background-color: #B4DEBF;
+    background-color: #1a1a1a;
     width: 90vw;
     margin: 0 5vw;
     display: flex;
@@ -47,6 +47,8 @@ p {
 
 h1 {
     font-family: 'Alfa Slab One', cursive;
+    color: whitesmoke;
+    font-weight: normal;
 }
 
 .fila {
@@ -85,15 +87,25 @@ h1 {
 }
 
 .full {
-    background-color: #C675FA;
+    background-color: #FA7255;
+    transition: all 1s linear;
 }
 
-.doble {
-    background-color: #726AE6;
+.full:hover {}
+
+.front {
+    background-color: #21FFA7;
+    transition: all 1s linear;
 }
 
 .designer {
-    background-color: #FF8D4F;
+    background-color: #FFEF57;
+    transition: all 1s linear;
+}
+
+.back {
+    background-color: #714AFF;
+    transition: all 1s linear;
 }
 
 .chiquita {
