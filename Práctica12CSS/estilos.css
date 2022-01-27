@@ -21,6 +21,7 @@ body {
 header {
     display: flex;
     width: 90vw;
+    height: 10vh;
     background-color: #B4DEBF;
     margin-left: 5vw;
     justify-content: center;
@@ -208,4 +209,11 @@ i:hover {
 .nombre {
     padding-top: 40px;
     padding-bottom: 10px;
+}
+
+footer {
+    height: 5vh;
+    background-color: #B4DEBF;
+    width: 90vw;
+    margin-left: 5vw;
 }
