@@ -156,28 +156,36 @@ i {
     color: #916259;
 }
 
-.doble .redes i {
+.back .redes i {
     color: #9C91FF;
 }
 
-.doble .redes i:hover {
+.back .redes i:hover {
     color: #B5AEFD;
 }
 
+.front .redes i {
+    color: #4AFFC0;
+}
+
+.front .redes i:hover {
+    color: #4AFFBE;
+}
+
 .designer .redes i {
-    color: #FFA475;
+    color: #FFF480;
 }
 
 .designer .redes i:hover {
-    color: #FFB191;
+    color: #FFF480;
 }
 
 .full .redes i {
-    color: #CC8BFF;
+    color: #FA957D;
 }
 
 .full .redes i:hover {
-    color: #E2B3FF;
+    color: #FA937C;
 }
 
 .encargo {
