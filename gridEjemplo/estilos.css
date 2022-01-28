@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    border: 1px solid black;
+    width: 80vw;
+    height: 30vh;
+    margin-top: 30px;
+    grid-template-columns: 25% 40% 25% 10%;
+    grid-template-rows: 30% 50% 20%;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7,
+.c8,
+.c9,
+.c10,
+.c11,
+.c12 {
+    border: 1px solid black;
+    padding-top: 20px;
+    /*grid-template-columns: 30%, 40% 30%, 10%;*/
+}
