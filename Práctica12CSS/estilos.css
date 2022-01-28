@@ -220,7 +220,7 @@ i:hover {
 
 .perfil:hover {
     transform: scale(1.05);
-    border: 2px solid black;
+    border: 2px solid white;
     transition: all 0.5s linear;
 }
 
