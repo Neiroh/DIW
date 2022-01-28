@@ -40,9 +40,10 @@ main {
 p {
     margin: 10px 30px;
     overflow: hidden;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: black;
     font-family: 'Source Serif 4', sans-serif;
+    transition: all 0.5s linear 0.5s;
 }
 
 h1 {
@@ -155,7 +156,7 @@ h1 {
     transform: rotateX(90deg);
     transform-origin: bottom;
     transition: all 0.5s linear;
-    height: 10%;
+    height: 15%;
 }
 
 i {
