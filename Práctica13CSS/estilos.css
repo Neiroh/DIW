@@ -7,7 +7,7 @@
 html {
     width: 100vw;
     overflow-x: hidden;
-    background-color: #A1D4FA;
+    background-color: #C1D2F7;
 }
 
 a {
@@ -46,9 +46,14 @@ main {
 .redes {
     position: fixed;
     top: 0;
-    background-color: #FA684B;
+    background-color: #0C1D7A;
     width: 100vw;
+    color: whitesmoke;
     text-align: center;
+}
+
+i {
+    color: whitesmoke;
 }
 
 .col1 {
@@ -61,14 +66,28 @@ main {
     display: flex;
     align-self: flex-start;
     margin-left: 1vw;
-    background-color: #FAA441;
+    background-color: #233761;
+    color: #C1D2F7;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .left:nth-child(odd) {
     display: flex;
     align-self: flex-end;
     margin-right: 1vw;
-    background-color: #9DFA4D;
+    background-color: #093DAD;
+    color: #C1D2F7;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.left:nth-child(odd) .titleLeft {
+    background-color: #1A2E61;
 }
 
 .col2 {
@@ -99,7 +118,8 @@ main {
     align-items: center;
     height: 4vh;
     width: 16vw;
-    background-color: #FAD48C;
+    background-color: #0B4EDE;
+    color: #C1D2F7;
 }
 
 .left {
@@ -117,8 +137,10 @@ main {
     margin-right: 5%;
     margin-bottom: 5%;
     border: 1px solid black;
-    min-width: 175px;
+    min-width: 150px;
     flex: 1 0 25%;
+    background-color: #AAC2F8;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.205);
 }
 
 .titleCol1,
@@ -140,7 +162,8 @@ main {
     padding-right: 1vw;
     padding-left: 1vw;
     padding-bottom: 2vh;
-    background-color: ;
+    background-color: #98b7ff;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.205);
 }
 
 .personaje {
@@ -160,13 +183,19 @@ main {
 }
 
 .boton {
+    display: flex;
     width: 95%;
     border: 1px solid black;
     text-align: center;
     margin-left: 2.5%;
     margin-bottom: 5%;
     margin-top: 5%;
-    background-color: crimson;
+    color: #C1D2F7;
+    background-color: #05215E;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
 }
 
 .titleRight {
@@ -186,4 +215,6 @@ main {
     margin-bottom: 5px;
     align-items: center;
     justify-content: center;
+    color: #ADC0FA;
+    background-color: #051C61;
 }
