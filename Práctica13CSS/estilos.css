@@ -129,6 +129,16 @@ i {
     width: 16vw;
     background-color: #0B4EDE;
     color: #C1D2F7;
+    transition: all 0.25s linear;
+}
+
+.navega:hover {
+    border: 2px solid #1A2E61;
+    letter-spacing: 3px;
+    color: #0B4EDE;
+    background-color: #C1D2F7;
+    font-weight: bold;
+    transition: all 0.25s linear;
 }
 
 .left {
@@ -207,6 +217,13 @@ i {
     align-items: center;
     justify-content: center;
     border-radius: 2px;
+    transition: all 0.2s linear;
+}
+
+.boton:hover {
+    background-color: #6694ff;
+    color: black;
+    transition: all 0.2s linear;
 }
 
 .titleRight {
