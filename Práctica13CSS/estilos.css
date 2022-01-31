@@ -94,14 +94,12 @@ i {
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-color: ;
     width: 50vw;
 }
 
 .col3 {
     display: flex;
     flex-direction: row;
-    background-color: ;
     width: 35vw;
     flex-wrap: wrap;
     align-self: flex-start;
