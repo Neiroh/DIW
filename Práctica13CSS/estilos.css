@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 html {
     width: 100vw;
     overflow-x: hidden;
     background-color: #C1D2F7;
+}
+
+header p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.8em;
+    color: #0C1D7A;
 }
 
 a {
@@ -41,6 +48,10 @@ nav {
 main {
     display: flex;
     flex-direction: row;
+}
+
+.enlaceColor {
+    color: #6E4F00;
 }
 
 .redes {
@@ -148,6 +159,8 @@ i {
     margin-left: 1vw;
     height: 3vh;
     width: 100%;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #0C1D7A;
 }
 
 .center {
