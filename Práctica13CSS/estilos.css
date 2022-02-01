@@ -157,7 +157,7 @@ i {
     margin-bottom: 5%;
     border: 1px solid black;
     min-width: 150px;
-    flex: 1 0 25%;
+    flex: 1 0 40%;
     background-color: #AAC2F8;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.205);
 }
