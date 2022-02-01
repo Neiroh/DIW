@@ -24,7 +24,7 @@ a {
 
 header {
     display: flex;
-    margin-top: 40px;
+    margin-top: 50px;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -50,21 +50,39 @@ main {
     flex-direction: row;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #0C1D7A;
+    color: #C1D2F7;
+}
+
 .enlaceColor {
     color: #6E4F00;
 }
 
 .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: fixed;
     top: 0;
     background-color: #0C1D7A;
     width: 100vw;
     color: whitesmoke;
     text-align: center;
+    height: 50px;
 }
 
 i {
     color: whitesmoke;
+    margin: 0 5px;
+    transition: transform 0.2s linear;
 }
 
 .col1 {
@@ -224,6 +242,12 @@ i {
     background-color: #6694ff;
     color: black;
     transition: all 0.2s linear;
+}
+
+i:hover {
+    transform: scale(1.5);
+    color: #98b7ff;
+    transition: transform 0.2s linear;
 }
 
 .titleRight {
