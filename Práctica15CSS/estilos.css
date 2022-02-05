@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.horario {
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: repeat(6, 10vw);
+    grid-template-rows: repeat(7, 5vh);
+    height: 80vh;
+    width: 80vw;
+    border: 3px solid green;
+}
+
+.doble {
+    grid-column: span 2;
+}
+
+.semana {
+    display: grid;
+    background-color: aqua;
+}
+
+.diasSemana {
+    display: grid;
+    background-color: blue;
+}
+
+.cuadro {
+    width: 100%;
+    height: 11.25vh;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.eie {
+    background-color: pink;
+}
+
+.diw {
+    background-color: gold;
+}
+
+.dwec {
+    background-color: deepskyblue;
+}
+
+.dwes {
+    background-color: burlywood;
+}
+
+.dapw {
+    background-color: darkorange;
+}
