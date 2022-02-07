@@ -4,36 +4,89 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FFFF4F;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23848b4d' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23a5ab6b' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23848b4d' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23a5ab6b' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23C6CC8A' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23595830' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%236c6a42' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23807E54' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%236c6a42' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23595830' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23807E54' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23595830' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23807E54' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%236c6a42' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23807E54' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 header {
-    background-color: black;
     height: 20vh;
+    text-align: center;
+    color: black;
+    background-color: #61be58;
+}
+
+h1 {
+    padding-top: 2vh;
+    font-family: 'Lobster', cursive;
+}
+
+header p {
+    margin: 3vh 7.5vw;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 
 main {
     display: grid;
-    background-color: red;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 260px));
-    border: 1px solid black;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 260px));
     justify-content: center;
     grid-gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer {
-    background-color: green;
-    height: 10vh;
+    height: 5vh;
+    text-align: center;
+    padding-top: 1vh;
+    background-color: #61be58;
 }
 
 img {
     width: 100%;
+    height: 200px;
+}
+
+.foto {
+    width: 100%;
+    height: 200px;
+}
+
+.nombre {
+    padding-top: 0.2vh;
+    padding-left: 0.5vw;
+    height: 10%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 
 .cuadro {
-    width: 20%;
+    background-color: #61be58;
+    width: 100%;
     display: inline-block;
     position: relative;
     border: 1px solid black;
+    border-radius: 5px;
+    height: 250px;
+    transition: transform 0.4s linear;
+}
+
+.cuadro:hover {
+    position: relative;
+    transform: scale(1.1);
+    transition: transform 0.4s linear;
+    z-index: 2;
 }
 
 .pais {
     text-align: right;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+    padding-right: 0.5vw;
+    height: 10%;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
