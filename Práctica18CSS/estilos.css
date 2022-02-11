@@ -39,6 +39,27 @@ img {
     transform: rotateY(180deg);
 }*/
 
+.front:hover .nombre {
+    animation-name: nombre;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.front:hover .nombre .mueve {
+    opacity: 100%;
+    width: 100%;
+    left: 0;
+    transition: right, opacity, width 0.4s linear 0.5s;
+}
+
+.front .nombre p {
+    position: absolute;
+    z-index: 3;
+}
+
 .gira {
     width: 100%;
     height: 100%;
@@ -74,6 +95,7 @@ img {
 }
 
 .nombre {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,6 +104,15 @@ img {
     width: 90%;
     border-radius: 5px;
     margin: 7px auto;
+    opacity: 0;
+}
+
+.mueve {
+    position: absolute;
+    left: 50%;
+    background-color: blueviolet;
+    width: 0%;
+    height: 100%;
     opacity: 0;
 }
 
@@ -179,4 +210,16 @@ img {
 
 .gira.girar {
     transform: rotateY(180deg);
+}
+
+@keyframes nombre {
+    0% {
+        border: 2px solid white;
+    }
+    50% {
+        border: 2px solid black;
+    }
+    100% {
+        border: 2px solid white;
+    }
 }
