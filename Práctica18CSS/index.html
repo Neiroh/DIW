@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Gotta catch'em all!</h1>
+        <p>Click on the pictures for more info</p>
+
+    </header>
+
+    <main class="contendor">
+
+        <div class="cuadro c1">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Articuno is a dual-type Ice/Flying Legendary Pokémon introduced in Generation I.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c2">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Infernape is a dual-type Fire/Fighting Pokémon introduced in Generation IV.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c3">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Rayquaza is a dual-type Dragon/Flying Legendary Pokémon introduced in Generation III. While it is not known to evolve into or from any other Pokémon, Rayquaza can Mega Evolve into Mega Rayquaza if it knows Dragon Ascent, but only
+                            if it is not holding a Z-Crystal. Rayquaza is the game mascot of Pokémon Emerald.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c4">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Treecko is a Grass-type Pokémon introduced in Generation III.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c5">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Lucario is a dual-type Fighting/Steel Pokémon introduced in Generation IV.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c6">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Shaymin is a Grass-type Mythical Pokémon introduced in Generation IV. While it is not known to evolve into or from another Pokémon, Shaymin has a second Forme activated by using a Gracidea flower in the daytime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c7">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Eevee is a Normal-type Pokémon introduced in Generation I.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c8">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Luxray is an Electric-type Pokémon introduced in Generation IV.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c9">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Totodile is a Water-type Pokémon introduced in Generation II.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c10">
+            <div class="gira">
+                <div class="front">
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Mimikyu is a dual-type Ghost/Fairy Pokémon introduced in Generation VII.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro c11">
+            <div class="gira">
+                <div class="front">
+
+                    <div class="nombre"></div>
+                </div>
+                <div class="back">
+                    <div class="texto">
+                        <p>Darkrai is a Dark-type Mythical Pokémon introduced in Generation IV. It is not known to evolve into or from any other Pokémon. It is a member of the Lunar duo with Cresselia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $('.cuadro').on('click', function() {
+                $(this).find('.gira').toggleClass('girar');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
