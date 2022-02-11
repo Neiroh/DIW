@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Maitree', serif;
 }
 
 body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: darkslategrey;
+    background-color: rgb(24, 24, 24);
 }
 
 h2 {
@@ -19,7 +20,9 @@ h2 {
 header {
     display: flex;
     align-items: center;
-    width: 80vw;
+    width: 90vw;
+    margin: 2vh 0;
+    font-family: 'Kodchasan', sans-serif;
 }
 
 header a {
@@ -50,7 +53,7 @@ ul {
 }
 
 main {
-    max-width: 1500px;
+    max-width: 1200px;
     background-color: #D69D36;
     display: grid;
     /*grid-template-columns: repeat(6, minmax(15%, 1fr));*/
@@ -75,11 +78,12 @@ footer {
 .titulo {
     color: #1C4885;
     font-size: 2em;
+    margin-bottom: 5%;
+    font-family: 'Kodchasan', sans-serif;
 }
 
 .soloTexto {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 30px;
 }
 
 .logo {
@@ -97,17 +101,22 @@ footer {
 }
 
 .cuadro a {
+    color: #FF9900;
     width: 80%;
 }
 
 .boton {
+    position: relative;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     background-color: #1C4885;
+    border: 3px solid black;
     height: 150%;
+    transition: color, border, background-color 0.5s linear;
 }
 
 .texto {
@@ -154,23 +163,31 @@ footer {
 .oculto {
     position: absolute;
     width: 80%;
-    height: 20px;
     bottom: 100%;
     left: 10%;
     z-index: 2;
     opacity: 0;
     transition: all 0.5s linear;
+    font-size: 1.3em;
+}
+
+.oculto .boton {
+    border: 3px solid #1C4885;
+    background-color: #d69e36d8;
+    color: #1C4885;
 }
 
 .soloTexto a {
+    margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .soloTexto a:hover .boton {
     color: white;
     background-color: black;
     border: 3px solid #1C4885;
-    transition: color, background-color 0.5s linear;
+    transition: color, border, background-color 0.5s linear;
 }
 
 .Cimagen:hover .imagen img {
@@ -186,4 +203,10 @@ footer {
     bottom: 50%;
     opacity: 100%;
     transition: all 0.5s linear;
+}
+
+.soloTexto a .boton p,
+.oculto .boton p {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: bold;
 }
