@@ -86,6 +86,7 @@ img {
 .back {
     background-image: url("./images/pokeball.png");
     background-size: cover;
+    /*Esto está hecho porque si no, la cara trasera se monta sobre la frontal*/
     transform: rotateY(180deg);
 }
 
