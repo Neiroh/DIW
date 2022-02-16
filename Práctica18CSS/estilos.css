@@ -111,6 +111,7 @@ img {
 .mueve {
     position: absolute;
     left: 50%;
+    border-radius: 3px;
     background-color: blueviolet;
     width: 0%;
     height: 100%;
@@ -205,7 +206,7 @@ img {
 .c9 .gira .front,
 .c10 .gira .front,
 .c11 .gira .front {
-    background-color: aqua;
+    background-color: black;
     background-size: cover;
 }
 
@@ -215,13 +216,12 @@ img {
 
 @keyframes nombre {
     0% {
-        border: 2px solid white;
+        border: 1px solid white;
     }
     50% {
-        border: 2px solid black;
-        box-shadow: 10px 10px 10px 10px 1push5px white;
+        box-shadow: 0 0 10px white;
     }
     100% {
-        border: 2px solid white;
+        border: 1px solid white;
     }
 }
