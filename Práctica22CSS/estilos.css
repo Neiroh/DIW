@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6DEE6;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 5px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #64DAFA;
+    margin: 10px;
+    gap: 5px;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    background-color: #64DAFA;
+    margin-top: 20px;
+}
+
+.redonda {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.enlaceNav {
+    color: brown;
+    text-decoration-color: yellow;
+    text-align: center;
+}
+
+.diferente {
+    grid-column: span 2;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.tarjeta {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #64DAFA;
+}
+
+.texto {
+    text-align: justify;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.tarjeta img {
+    display: block;
+    margin: 20px auto;
+}
+
+.titTarjeta {
+    background-color: #CFEDFF;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 2px;
+}
+
+.enlace {
+    margin: 5px;
+}
+
+.enlace a {
+    text-decoration: none;
+}
+
+.tarjMain {
+    text-align: center;
+    text-shadow: 0px 0px 12px white;
+    background-color: #7F9FB3;
+}
