@@ -1,0 +1,116 @@
+/*hover: rgb(133, 74, 141)*/
+
+
+/*lineas menu: rgb(207, 207, 202) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: Electrolize;
+}
+
+nav {
+    background-color: rgb(94, 19, 87);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+img {
+    width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    background-color: rgb(94, 19, 87);
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+.contenedor p {
+    font-size: 1.2em;
+}
+
+.cuadro {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cuadro1 {
+    display: inline-block;
+}
+
+.cuadro2 {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: 100%;
+}
+
+.cuadro2 ul {
+    display: inline-flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.cuadro2 ul li {
+    height: 100%;
+    display: flex;
+    border-left: 1px solid rgb(207, 207, 202);
+    padding: 0 2%;
+    height: 100%;
+}
+
+.cuadro2:last-child {
+    border-right: 1px solid rgb(207, 207, 202);
+}
+
+.inicio {
+    padding-top: 10px;
+    font-size: 2em;
+}
+
+.contenedor {
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(14, 3, 14, 0.8);
+}
+
+.contenedorGrande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5% 10%;
+    background-image: url(./fotos/foto1.jpg);
+    background-size: cover;
+}
+
+.tituloContenedor {
+    text-align: center;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
