@@ -10,10 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <main>
+        <div class="hamb">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
+        </div>
         <nav>
             <div class="cuadro1">
                 <li class="inicio">Inicio</li>
@@ -26,50 +32,52 @@
                     <li class="asir cuadro">
                         <p>ASIR</p>
                     </li>
-                    <li class="dw cuadro">
+                    <li class="daw cuadro">
                         <p>Desarrollo Web</p>
                     </li>
-                    <li class="dm cuadro">
+                    <li class="dam cuadro">
                         <p>Desarrollo Multiplataforma</p>
                     </li>
                     <li class="ciber cuadro">
                         <p>Ciberseguridad</p>
                     </li>
+                    <li class="cuadro portada">
+                        <p>Volver a la portada</p>
+                    </li>
                 </ul>
 
             </div>
-
         </nav>
 
-        <div class="contenedorGrande">
-            <div class="contenedor principal">
+        <div class="contenedorGrande principal">
+            <div class="contenedor">
                 <h2 class="tituloContenedor">Ciclos Formativos de Informática</h2>
                 <img src="./fotos/logo.jpg" alt="">
                 <p>¿Te apasiona la Informática? Si es así, te invitamos a descubrir los Ciclos Formativos que ofertamos en nuestro Centro. Sin duda podrás encontrar el que más se adapte a tus intereses y comenzar a prepararte para un brillante futuro profesional.
                     Haz clic en el menú de arriba para saber más</p>
             </div>
         </div>
-        <div class="contenedorGrande">
 
-            <div class="contenedor contsmr">
+        <div class="contenedorGrande contsmr invisible">
+            <div class="contenedor">
                 <h2 class="tituloContenedor">Sistemas Microinformáticos y Redes</h2>
                 <img src="./fotos/foto8.jpg" alt="">
                 <p>El Ciclo Formativo de Grado Medio en Sistemas Microinformáticos y Redes sirve para formar a profesionales expertos en redes informáticas. Podrás por ejemplo diagnosticar disfunciones en sistemas microinformáticos y redes mediante pruebas
                     funcionales. También instalar, configurar y mantener servicios multiusuario, aplicaciones y dispositivos compartidos en un entorno de red local.</p>
             </div>
         </div>
-        <div class="contenedorGrande">
 
-            <div class="contenedor contasir">
+        <div class="contenedorGrande contasir invisible">
+            <div class="contenedor">
                 <h2 class="tituloContenedor">Administración de Sistemas Informáticos en Red</h2>
                 <img src="./fotos/foto9.jpg" alt="">
                 <p>El Ciclo Formativo de Grado Superior en Administración de Sistemas Informáticos en Red es muy completo; podrás trabajar como administrador de sistemas, responsable de Informática, técnico en servicios de Internet, técnico de telecomunicaciones,
                     técnico de mensajería electrónica, técnico en teleasistencia, personal de apoyo y soporte técnico, técnico en administración de base de datos, técnico de redes, técnico en entornos web y supervisor de sistemas.</p>
             </div>
         </div>
-        <div class="contenedorGrande">
 
-            <div class="contenedor contdaw">
+        <div class="contenedorGrande contdaw invisible">
+            <div class="contenedor">
                 <h2 class="tituloContenedor">Desarrollo de Aplicaciones Web</h2>
                 <img src="./fotos/foto10.jpg" alt="">
                 <p>El Ciclo Formativo Superior en Desarrollo de Aplicaciones Web es la formación que estás buscando si quieres convertirte en programador o desarrollador web. Por ejemplo, un técnico en Desarrollo de Aplicaciones Web puede acabar trabajando
@@ -78,15 +86,18 @@
                 </p>
             </div>
         </div>
-        <div class="contenedor contdam">
-            <h2 class="tituloContenedor">Desarrollo de Aplicaciones Multiplataforma</h2>
-            <img src="./fotos/foto11.jpg" alt="">
-            <p>En el Ciclo Formativo Superior en Desarrollo de Aplicaciones Multiplataforma se aprende a programar todo tipo de aplicaciones. Los alumnos se forman para ser capaces de dar respuesta a cualquier necesidad, ya sea en PC o móvil. El mundo digital
-                avanza deprisa, las plataformas se optimizan y aparecen nuevos dispositivos. Gracias a la versatilidad del Ciclo, los técnicos pueden trabajar en diferentes campos y plataformas y ofrecer soluciones realmente innovadoras.</p>
-        </div>
-        <div class="contenedorGrande">
 
-            <div class="contenedorciber">
+        <div class="contenedorGrande contdam invisible">
+            <div class="contenedor">
+                <h2 class="tituloContenedor">Desarrollo de Aplicaciones Multiplataforma</h2>
+                <img src="./fotos/foto11.jpg" alt="">
+                <p>En el Ciclo Formativo Superior en Desarrollo de Aplicaciones Multiplataforma se aprende a programar todo tipo de aplicaciones. Los alumnos se forman para ser capaces de dar respuesta a cualquier necesidad, ya sea en PC o móvil. El mundo
+                    digital avanza deprisa, las plataformas se optimizan y aparecen nuevos dispositivos. Gracias a la versatilidad del Ciclo, los técnicos pueden trabajar en diferentes campos y plataformas y ofrecer soluciones realmente innovadoras.</p>
+            </div>
+        </div>
+
+        <div class="contenedorGrande contciber invisible">
+            <div class="contenedor">
                 <h2 class="tituloContenedor">Curso de Ciberseguridad</h2>
                 <img src="./fotos/foto12.jpg" alt="">
                 <p>El Curso de Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información, al que podrás acceder después de finalizar cualquier Ciclo de Grado Superior de la Familia Profesional de Informática, es una reciente novedad
@@ -94,6 +105,7 @@
                     un gran complemento para tu formación.</p>
             </div>
         </div>
+
     </main>
     <footer>
 
@@ -101,16 +113,141 @@
 
     </footer>
 
-    <!--
+    <script>
+        $('.cuadro1').on('click', function() {
+            $(this).parents().find('.principal').addClass('visible');
+            $(this).parents().find('.contsmr').removeClass('visible');
+            $(this).parents().find('.contasir').removeClass('visible');
+            $(this).parents().find('.contdaw').removeClass('visible');
+            $(this).parents().find('.contdam').removeClass('visible');
+            $(this).parents().find('.contciber').removeClass('visible');
 
-    
-    $('.boton1').on('click', function (){
-        $(this).parents().find('.lienzo').addClass('visible')
-        $(this).parents().find('.lienzo').removeClass('visible')
-        $(this).parents().find('.lienzo').toggleClass('anima')
-    })
+            $(this).parents().find('.principal').removeClass('invisible');
+            $(this).parents().find('.contsmr').addClass('invisible');
+            $(this).parents().find('.contasir').addClass('invisible');
+            $(this).parents().find('.contdaw').addClass('invisible');
+            $(this).parents().find('.contdam').addClass('invisible');
+            $(this).parents().find('.contciber').addClass('invisible');
 
--->
+            $(this).parents().find('.contenedornavegacion').toggleClass('desp pleg');
+            $(this).parents().find('.contenedor_icono_burger').toggleClass('barras cruz');
+        });
+        $('.portada').on('click', function() {
+            $(this).parents().find('.principal').addClass('visible');
+            $(this).parents().find('.contsmr').removeClass('visible');
+            $(this).parents().find('.contasir').removeClass('visible');
+            $(this).parents().find('.contdaw').removeClass('visible');
+            $(this).parents().find('.contdam').removeClass('visible');
+            $(this).parents().find('.contciber').removeClass('visible');
+
+            $(this).parents().find('.principal').removeClass('invisible');
+            $(this).parents().find('.contsmr').addClass('invisible');
+            $(this).parents().find('.contasir').addClass('invisible');
+            $(this).parents().find('.contdaw').addClass('invisible');
+            $(this).parents().find('.contdam').addClass('invisible');
+            $(this).parents().find('.contciber').addClass('invisible');
+
+            $(this).parents().find('.contenedornavegacion').toggleClass('desp pleg');
+            $(this).parents().find('.contenedor_icono_burger').toggleClass('barras cruz');
+        });
+        $('.smr').on('click', function() {
+            $(this).parents().find('.principal').removeClass('visible');
+            $(this).parents().find('.contsmr').addClass('visible');
+            $(this).parents().find('.contasir').removeClass('visible');
+            $(this).parents().find('.contdaw').removeClass('visible');
+            $(this).parents().find('.contdam').removeClass('visible');
+            $(this).parents().find('.contciber').removeClass('visible');
+
+            $(this).parents().find('.principal').addClass('invisible');
+            $(this).parents().find('.contsmr').removeClass('invisible');
+            $(this).parents().find('.contasir').addClass('invisible');
+            $(this).parents().find('.contdaw').addClass('invisible');
+            $(this).parents().find('.contdam').addClass('invisible');
+            $(this).parents().find('.contciber').addClass('invisible');
+
+            $(this).parents().find('.contenedornavegacion').toggleClass('desp pleg');
+            $(this).parents().find('.contenedor_icono_burger').toggleClass('barras cruz');
+        });
+        $('.asir').on('click', function() {
+            $(this).parents().find('.principal').removeClass('visible');
+            $(this).parents().find('.contsmr').removeClass('visible');
+            $(this).parents().find('.contasir').addClass('visible');
+            $(this).parents().find('.contdaw').removeClass('visible');
+            $(this).parents().find('.contdam').removeClass('visible');
+            $(this).parents().find('.contciber').removeClass('visible');
+
+            $(this).parents().find('.principal').addClass('invisible');
+            $(this).parents().find('.contsmr').addClass('invisible');
+            $(this).parents().find('.contasir').removeClass('invisible');
+            $(this).parents().find('.contdaw').addClass('invisible');
+            $(this).parents().find('.contdam').addClass('invisible');
+            $(this).parents().find('.contciber').addClass('invisible');
+
+            $(this).parents().find('.contenedornavegacion').toggleClass('desp pleg');
+            $(this).parents().find('.contenedor_icono_burger').toggleClass('barras cruz');
+        });
+
+        $('.daw').on('click', function() {
+            $(this).parents().find('.principal').removeClass('visible');
+            $(this).parents().find('.contsmr').removeClass('visible');
+            $(this).parents().find('.contasir').removeClass('visible');
+            $(this).parents().find('.contdaw').addClass('visible');
+            $(this).parents().find('.contdam').removeClass('visible');
+            $(this).parents().find('.contciber').removeClass('visible');
+
+            $(this).parents().find('.principal').addClass('invisible');
+            $(this).parents().find('.contsmr').addClass('invisible');
+            $(this).parents().find('.contasir').addClass('invisible');
+            $(this).parents().find('.contdaw').removeClass('invisible');
+            $(this).parents().find('.contdam').addClass('invisible');
+            $(this).parents().find('.contciber').addClass('invisible');
+
+            $(this).parents().find('.contenedornavegacion').toggleClass('desp pleg');
+            $(this).parents().find('.contenedor_icono_burger').toggleClass('barras cruz');
+        });
+
+        $('.dam').on('click', function() {
+            $(this).parents().find('.principal').removeClass('visible');
+            $(this).parents().find('.contsmr').removeClass('visible');
+            $(this).parents().find('.contasir').removeClass('visible');
+            $(this).parents().find('.contdaw').removeClass('visible');
+            $(this).parents().find('.contdam').addClass('visible');
+            $(this).parents().find('.contciber').removeClass('visible');
+
+            $(this).parents().find('.principal').addClass('invisible');
+            $(this).parents().find('.contsmr').addClass('invisible');
+            $(this).parents().find('.contasir').addClass('invisible');
+            $(this).parents().find('.contdaw').addClass('invisible');
+            $(this).parents().find('.contdam').removeClass('invisible');
+            $(this).parents().find('.contciber').addClass('invisible');
+
+            $(this).parents().find('.contenedornavegacion').toggleClass('desp pleg');
+            $(this).parents().find('.contenedor_icono_burger').toggleClass('barras cruz');
+        });
+
+        $('.ciber').on('click', function() {
+            $(this).parents().find('.principal').removeClass('visible');
+            $(this).parents().find('.contsmr').removeClass('visible');
+            $(this).parents().find('.contasir').removeClass('visible');
+            $(this).parents().find('.contdaw').removeClass('visible');
+            $(this).parents().find('.contdam').removeClass('visible');
+            $(this).parents().find('.contciber').addClass('visible');
+
+            $(this).parents().find('.principal').addClass('invisible');
+            $(this).parents().find('.contsmr').addClass('invisible');
+            $(this).parents().find('.contasir').addClass('invisible');
+            $(this).parents().find('.contdaw').addClass('invisible');
+            $(this).parents().find('.contdam').addClass('invisible');
+            $(this).parents().find('.contciber').removeClass('invisible');
+
+            $(this).parents().find('.contenedornavegacion').toggleClass('desp pleg');
+            $(this).parents().find('.contenedor_icono_burger').toggleClass('barras cruz');
+        });
+        $('.hamb').on('click', function() {
+            $(this).toggleClass('cruz');
+            $("nav").toggleClass('.hamb')
+        })
+    </script>
 </body>
 
 </html>

@@ -11,23 +11,31 @@
     font-family: Electrolize;
 }
 
+body {
+    position: relative;
+    top: -20px;
+}
+
 nav {
     background-color: rgb(94, 19, 87);
     display: flex;
     justify-content: space-between;
     height: 50px;
+    position: relative;
+    top: 20px;
 }
 
 li {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    cursor: pointer;
 }
 
 img {
-    width: 600px;
-    margin: 0 auto;
+    width: 500px;
+    margin: 20px auto;
 }
 
 footer {
@@ -64,13 +72,14 @@ footer {
 .cuadro2 ul {
     display: inline-flex;
     align-items: center;
-    width: 60%;
+    width: 55%;
     height: 100%;
+    /*border-right: 1px solid rgb(207, 207, 202);*/
 }
 
 .cuadro2 ul li {
     height: 100%;
-    display: flex;
+    /*display: flex;*/
     border-left: 1px solid rgb(207, 207, 202);
     padding: 0 2%;
     height: 100%;
@@ -83,6 +92,8 @@ footer {
 .inicio {
     padding-top: 10px;
     font-size: 2em;
+    position: absolute;
+    left: 1%;
 }
 
 .contenedor {
@@ -91,6 +102,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: rgba(14, 3, 14, 0.8);
+    padding: 5% 10%;
 }
 
 .contenedorGrande {
@@ -98,13 +110,48 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2.5% 10%;
+    padding: 5% 10% 7.5% 10%;
     background-image: url(./fotos/foto1.jpg);
     background-size: cover;
+    height: 94.8vh;
 }
 
 .tituloContenedor {
     text-align: center;
+}
+
+.contsmr {
+    background-image: url(./fotos/foto2.jpg);
+    background-size: cover;
+    padding: 2.5% 10% 7.5% 10%;
+}
+
+.contasir {
+    background-image: url(./fotos/foto3.jpg);
+    background-size: cover;
+}
+
+.contdaw {
+    background-image: url(./fotos/foto4.jpg);
+    background-size: cover;
+}
+
+.contdam {
+    background-image: url(./fotos/foto5.jpg);
+    background-size: cover;
+    padding: 2.5% 10% 7.5% 10%;
+}
+
+.contciber {
+    background-image: url(./fotos/foto6.jpg);
+    background-size: cover;
+    padding: 2.5% 10% 7.5% 10%;
+}
+
+.principal {
+    background-image: url(./fotos/foto1.jpg);
+    background-size: cover;
+    padding: 2.5% 10% 7.5% 10%;
 }
 
 .visible {
@@ -113,4 +160,87 @@ footer {
 
 .invisible {
     display: none;
+}
+
+.portada {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    * {
+        overflow-x: hidden;
+    }
+    nav {
+        display: none;
+    }
+    .l1 {
+        display: block;
+        position: relative;
+        top: 0px;
+        width: 40px;
+        height: 5px;
+        background-color: aliceblue;
+    }
+    .l2 {
+        position: relative;
+        display: block;
+        top: 12px;
+        width: 40px;
+        height: 5px;
+        background-color: aliceblue;
+    }
+    .l3 {
+        position: relative;
+        display: block;
+        top: 25px;
+        width: 40px;
+        height: 5px;
+        background-color: aliceblue;
+    }
+    .hamb {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .cruz.l1 {
+        transform: translateY(20px) rotateZ(45deg);
+    }
+    .cruz .l3 {
+        transform: translateY(-10px) rotateZ(-45deg);
+    }
+    .cruz .l2 {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
+    .contenedorGrande {
+        height: 98vh;
+    }
+    .cuadro2 ul {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .cuadro2 {
+        display: flex;
+        width: 100%;
+    }
+    ul li {
+        border-left: 0;
+        border-bottom: 1px solid rgb(207, 207, 202);
+    }
+    .cuadro {
+        width: 100%;
+    }
+    .inicio {
+        opacity: 0;
+    }
+    .portada {
+        display: flex;
+    }
 }
